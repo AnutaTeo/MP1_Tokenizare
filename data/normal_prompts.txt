@@ -1,0 +1,59 @@
+Explain how recursion works in Python with a simple example.
+
+Summarize the following article into three concise paragraphs.
+
+Write a professional email requesting a project deadline extension.
+
+Explain the difference between TCP and UDP networking protocols.
+
+Generate interview questions for a junior backend engineer.
+
+Optimize the following SQL query for better performance.
+
+Explain how binary search trees work.
+
+Describe the differences between supervised and unsupervised learning.
+
+Help me debug this Python function that raises an index error.
+
+Create a weekly study schedule for a computer science student.
+
+Write a concise product description for a wireless keyboard.
+
+Explain object-oriented programming concepts using Java examples.
+
+Summarize this research paper in simple terms.
+
+Generate a REST API example using Flask.
+
+Explain how HTTP requests and responses work.
+
+Describe how databases handle indexing internally.
+
+Create a short meeting agenda for a software engineering team.
+
+Write documentation for this authentication function.
+
+Explain the producer-consumer problem in operating systems.
+
+Refactor this code to improve readability and maintainability.
+
+Generate a simple machine learning project idea for beginners.
+
+Explain multithreading using real-world examples.
+
+Describe how DNS resolution works step by step.
+
+Create a concise LinkedIn summary for a software engineering student.
+
+Explain Dijkstra’s algorithm with an example graph.
+
+Write unit tests for this Python class.
+
+Summarize the advantages of containerization using Docker.
+
+Generate a clean README structure for a GitHub repository.
+
+Explain how tokenization works in large language models.
+
+Describe how caching improves web application performance.
