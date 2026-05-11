@@ -1,0 +1,332 @@
+{
+    "i": {
+        "type": "redundant_word",
+        "score": 13.0,
+        "normal_frequency": 1,
+        "redundant_frequency": 13,
+        "suggested_action": "remove_or_replace"
+    },
+    "actually": {
+        "type": "redundant_word",
+        "score": 9.0,
+        "normal_frequency": 1,
+        "redundant_frequency": 9,
+        "suggested_action": "remove_or_replace"
+    },
+    "really": {
+        "type": "redundant_word",
+        "score": 11.0,
+        "normal_frequency": 1,
+        "redundant_frequency": 11,
+        "suggested_action": "remove_or_replace"
+    },
+    "need": {
+        "type": "redundant_word",
+        "score": 6.0,
+        "normal_frequency": 1,
+        "redundant_frequency": 6,
+        "suggested_action": "remove_or_replace"
+    },
+    "you": {
+        "type": "redundant_word",
+        "score": 8.0,
+        "normal_frequency": 1,
+        "redundant_frequency": 8,
+        "suggested_action": "remove_or_replace"
+    },
+    "to": {
+        "type": "redundant_word",
+        "score": 5.0,
+        "normal_frequency": 1,
+        "redundant_frequency": 5,
+        "suggested_action": "remove_or_replace"
+    },
+    "very": {
+        "type": "redundant_word",
+        "score": 17.0,
+        "normal_frequency": 1,
+        "redundant_frequency": 17,
+        "suggested_action": "remove_or_replace"
+    },
+    "and": {
+        "type": "redundant_word",
+        "score": 4.25,
+        "normal_frequency": 4,
+        "redundant_frequency": 17,
+        "suggested_action": "remove_or_replace"
+    },
+    "in": {
+        "type": "redundant_word",
+        "score": 3.0,
+        "normal_frequency": 4,
+        "redundant_frequency": 12,
+        "suggested_action": "remove_or_replace"
+    },
+    "understand": {
+        "type": "redundant_word",
+        "score": 6.0,
+        "normal_frequency": 1,
+        "redundant_frequency": 6,
+        "suggested_action": "remove_or_replace"
+    },
+    "way": {
+        "type": "redundant_word",
+        "score": 5.0,
+        "normal_frequency": 1,
+        "redundant_frequency": 5,
+        "suggested_action": "remove_or_replace"
+    },
+    "because": {
+        "type": "redundant_word",
+        "score": 5.0,
+        "normal_frequency": 1,
+        "redundant_frequency": 5,
+        "suggested_action": "remove_or_replace"
+    },
+    "genuinely": {
+        "type": "redundant_word",
+        "score": 4.0,
+        "normal_frequency": 1,
+        "redundant_frequency": 4,
+        "suggested_action": "remove_or_replace"
+    },
+    "not": {
+        "type": "redundant_word",
+        "score": 3.0,
+        "normal_frequency": 1,
+        "redundant_frequency": 3,
+        "suggested_action": "remove_or_replace"
+    },
+    "it": {
+        "type": "redundant_word",
+        "score": 4.0,
+        "normal_frequency": 1,
+        "redundant_frequency": 4,
+        "suggested_action": "remove_or_replace"
+    },
+    "at": {
+        "type": "redundant_word",
+        "score": 4.0,
+        "normal_frequency": 1,
+        "redundant_frequency": 4,
+        "suggested_action": "remove_or_replace"
+    },
+    "all": {
+        "type": "redundant_word",
+        "score": 4.0,
+        "normal_frequency": 1,
+        "redundant_frequency": 4,
+        "suggested_action": "remove_or_replace"
+    },
+    "please": {
+        "type": "redundant_word",
+        "score": 9.0,
+        "normal_frequency": 1,
+        "redundant_frequency": 9,
+        "suggested_action": "remove_or_replace"
+    },
+    "provide": {
+        "type": "redundant_word",
+        "score": 5.0,
+        "normal_frequency": 1,
+        "redundant_frequency": 5,
+        "suggested_action": "remove_or_replace"
+    },
+    "detailed": {
+        "type": "redundant_word",
+        "score": 5.0,
+        "normal_frequency": 1,
+        "redundant_frequency": 5,
+        "suggested_action": "remove_or_replace"
+    },
+    "comprehensive": {
+        "type": "redundant_word",
+        "score": 3.0,
+        "normal_frequency": 1,
+        "redundant_frequency": 3,
+        "suggested_action": "remove_or_replace"
+    },
+    "explanation": {
+        "type": "redundant_word",
+        "score": 5.0,
+        "normal_frequency": 1,
+        "redundant_frequency": 5,
+        "suggested_action": "remove_or_replace"
+    },
+    "regarding": {
+        "type": "redundant_word",
+        "score": 4.0,
+        "normal_frequency": 1,
+        "redundant_frequency": 4,
+        "suggested_action": "remove_or_replace"
+    },
+    "internally": {
+        "type": "redundant_word",
+        "score": 3.0,
+        "normal_frequency": 1,
+        "redundant_frequency": 3,
+        "suggested_action": "remove_or_replace"
+    },
+    "honestly": {
+        "type": "redundant_word",
+        "score": 6.0,
+        "normal_frequency": 1,
+        "redundant_frequency": 6,
+        "suggested_action": "remove_or_replace"
+    },
+    "could": {
+        "type": "redundant_word",
+        "score": 4.0,
+        "normal_frequency": 1,
+        "redundant_frequency": 4,
+        "suggested_action": "remove_or_replace"
+    },
+    "maybe": {
+        "type": "redundant_word",
+        "score": 4.0,
+        "normal_frequency": 1,
+        "redundant_frequency": 4,
+        "suggested_action": "remove_or_replace"
+    },
+    "this": {
+        "type": "redundant_word",
+        "score": 3.4,
+        "normal_frequency": 5,
+        "redundant_frequency": 17,
+        "suggested_action": "remove_or_replace"
+    },
+    "extremely": {
+        "type": "redundant_word",
+        "score": 6.0,
+        "normal_frequency": 1,
+        "redundant_frequency": 6,
+        "suggested_action": "remove_or_replace"
+    },
+    "shorter": {
+        "type": "redundant_word",
+        "score": 3.0,
+        "normal_frequency": 1,
+        "redundant_frequency": 3,
+        "suggested_action": "remove_or_replace"
+    },
+    "can": {
+        "type": "redundant_word",
+        "score": 3.0,
+        "normal_frequency": 1,
+        "redundant_frequency": 3,
+        "suggested_action": "remove_or_replace"
+    },
+    "literally": {
+        "type": "redundant_word",
+        "score": 5.0,
+        "normal_frequency": 1,
+        "redundant_frequency": 5,
+        "suggested_action": "remove_or_replace"
+    },
+    "is": {
+        "type": "redundant_word",
+        "score": 10.0,
+        "normal_frequency": 1,
+        "redundant_frequency": 10,
+        "suggested_action": "remove_or_replace"
+    },
+    "important": {
+        "type": "redundant_word",
+        "score": 3.0,
+        "normal_frequency": 1,
+        "redundant_frequency": 3,
+        "suggested_action": "remove_or_replace"
+    },
+    "help": {
+        "type": "redundant_word",
+        "score": 3.0,
+        "normal_frequency": 1,
+        "redundant_frequency": 3,
+        "suggested_action": "remove_or_replace"
+    },
+    "completely": {
+        "type": "redundant_word",
+        "score": 4.0,
+        "normal_frequency": 1,
+        "redundant_frequency": 4,
+        "suggested_action": "remove_or_replace"
+    },
+    "entire": {
+        "type": "redundant_word",
+        "score": 4.0,
+        "normal_frequency": 1,
+        "redundant_frequency": 4,
+        "suggested_action": "remove_or_replace"
+    },
+    "particular": {
+        "type": "redundant_word",
+        "score": 3.0,
+        "normal_frequency": 1,
+        "redundant_frequency": 3,
+        "suggested_action": "remove_or_replace"
+    },
+    "issue": {
+        "type": "redundant_word",
+        "score": 3.0,
+        "normal_frequency": 1,
+        "redundant_frequency": 3,
+        "suggested_action": "remove_or_replace"
+    },
+    "absolutely": {
+        "type": "redundant_word",
+        "score": 4.0,
+        "normal_frequency": 1,
+        "redundant_frequency": 4,
+        "suggested_action": "remove_or_replace"
+    },
+    "overall": {
+        "type": "redundant_word",
+        "score": 5.0,
+        "normal_frequency": 1,
+        "redundant_frequency": 5,
+        "suggested_action": "remove_or_replace"
+    },
+    "code": {
+        "type": "redundant_word",
+        "score": 3.0,
+        "normal_frequency": 1,
+        "redundant_frequency": 3,
+        "suggested_action": "remove_or_replace"
+    },
+    "without": {
+        "type": "redundant_word",
+        "score": 3.0,
+        "normal_frequency": 1,
+        "redundant_frequency": 3,
+        "suggested_action": "remove_or_replace"
+    },
+    "unnecessarily": {
+        "type": "redundant_word",
+        "score": 4.0,
+        "normal_frequency": 1,
+        "redundant_frequency": 4,
+        "suggested_action": "remove_or_replace"
+    },
+    "complicated": {
+        "type": "redundant_word",
+        "score": 3.0,
+        "normal_frequency": 1,
+        "redundant_frequency": 3,
+        "suggested_action": "remove_or_replace"
+    },
+    "please please": {
+        "type": "repeated_phrase",
+        "frequency": 1,
+        "suggested_action": "compress"
+    },
+    "very very": {
+        "type": "repeated_phrase",
+        "frequency": 3,
+        "suggested_action": "compress"
+    },
+    "really really": {
+        "type": "repeated_phrase",
+        "frequency": 3,
+        "suggested_action": "compress"
+    }
+}
