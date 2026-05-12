@@ -162,7 +162,7 @@ def main():
 
     knowledge = build_knowledge_base(redundancy_scores, repeated_phrases)
 
-    save_knowledge_base(knowledge, "C:\\Users\\User\\Desktop\\MP\\MP1_Tokenizare\\knowledge\\redundant_patterns.json")
+    save_knowledge_base(knowledge, "knowledge/redundant_patterns.json")
 
     print("\nKnowledge base generated.")
 
