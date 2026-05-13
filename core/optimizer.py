@@ -2,25 +2,23 @@ import json
 import re
 import tiktoken
 
-
 encoding = tiktoken.get_encoding("cl100k_base")
 
 
 def load_knowledge_base(path):
-    #Loads the redundancy knowledge base 
-    
+    # Loads the redundancy knowledge base 
     with open(path, "r", encoding="utf-8") as file:
         return json.load(file)
 
 
 def load_prompt_from_file(path):
-    #Reads a prompt from a text file
+    # Reads a prompt from a text file
     with open(path, "r", encoding="utf-8") as file:
         return file.read()
 
 
 def save_prompt_to_file(path, prompt):
-    #Saves the optimized prompt back in the file
+    # Saves the optimized prompt back in the file
     with open(path, "w", encoding="utf-8") as file:
         file.write(prompt)
 
@@ -30,14 +28,14 @@ def count_tokens(text):
 
 
 def normalize_spaces(text):
-    #Removes duplicated spaces
+    # Removes duplicated spaces
     text = re.sub(r"\s+", " ", text)
     return text.strip()
 
 
 def clean_word(word):
-    #Removes punctuation and converts a word to lowercase
-    return re.sub(r"[^\w]", "", word).lower()
+    # Removes punctuation and converts a word to lowercase
+    return re.sub(r"[^\w\s]", "", word).lower()
 
 
 def replace_first_occurrence(text, old, new):
@@ -45,23 +43,15 @@ def replace_first_occurrence(text, old, new):
     return re.sub(pattern, new, text, count=1, flags=re.IGNORECASE)
 
 
-def remove_first_word_occurrence(text, target_word):
-    words = text.split()
-    result = []
-    removed = False
-
-    for word in words:
-        if not removed and clean_word(word) == target_word:
-            removed = True
-            continue
-
-        result.append(word)
-
-    return normalize_spaces(" ".join(result))
+def remove_first_occurrence(text, target):
+    # Uses regex to remove multi-word phrases or single words cleanly
+    pattern = r"\b" + re.escape(target) + r"\b"
+    result = re.sub(pattern, "", text, count=1, flags=re.IGNORECASE)
+    return normalize_spaces(result)
 
 
 def detect_repeated_phrase_suggestions(prompt, knowledge_base):
-    #Detects repeated phrases from the knowledge base
+    # Detects repeated phrases from the knowledge base
     suggestions = []
 
     for pattern, data in knowledge_base.items():
@@ -89,34 +79,31 @@ def detect_repeated_phrase_suggestions(prompt, knowledge_base):
     return suggestions
 
 
-def detect_redundant_word_suggestions(prompt, knowledge_base, min_score=4.0):
-    #Detects suggestions words to be removed if the users allows
-
+def detect_redundant_phrase_suggestions(prompt, knowledge_base, min_score=4.0):
+    # Detects suggested words or phrases to be removed
     suggestions = []
     already_suggested = set()
 
-    words = prompt.split()
-
-    for word in words:
-        cleaned = clean_word(word)
-
-        if cleaned in already_suggested:
+    for phrase, data in knowledge_base.items():
+        # Support both the old type and the new JSON "redundant_phrase" type
+        if data.get("type") not in ["redundant_word", "redundant_phrase"]:
             continue
 
-        if cleaned not in knowledge_base:
-            continue
-
-        data = knowledge_base[cleaned]
-
-        if data.get("type") != "redundant_word":
-            continue
-
-        score = data.get("score", 0)
+        # Look for the new "redundancy_score" key, fallback to "score"
+        score = data.get("redundancy_score", data.get("score", 0))
 
         if score < min_score:
             continue
 
-        preview = remove_first_word_occurrence(prompt, cleaned)
+        # Use regex boundaries to find the phrase in the prompt
+        pattern = r"\b" + re.escape(phrase) + r"\b"
+        if not re.search(pattern, prompt, flags=re.IGNORECASE):
+            continue
+
+        if phrase in already_suggested:
+            continue
+
+        preview = remove_first_occurrence(prompt, phrase)
 
         original_tokens = count_tokens(prompt)
         preview_tokens = count_tokens(preview)
@@ -126,22 +113,22 @@ def detect_redundant_word_suggestions(prompt, knowledge_base, min_score=4.0):
             continue
 
         suggestions.append({
-            "type": "redundant_word",
-            "target": cleaned,
-            "original_word": word,
+            "type": "redundant_phrase", 
+            "target": phrase,
+            "original_phrase": phrase,
             "score": score,
             "saved_tokens": saved_tokens,
             "reason": f"High redundancy score: {score}",
             "preview": preview
         })
 
-        already_suggested.add(cleaned)
+        already_suggested.add(phrase)
 
     return suggestions
 
 
 def generate_suggestions(prompt, knowledge_base, min_score=4.0):
-    #Generates all optimization suggestions
+    # Generates all optimization suggestions
     suggestions = []
 
     repeated_suggestions = detect_repeated_phrase_suggestions(
@@ -149,20 +136,20 @@ def generate_suggestions(prompt, knowledge_base, min_score=4.0):
         knowledge_base
     )
 
-    word_suggestions = detect_redundant_word_suggestions(
+    phrase_suggestions = detect_redundant_phrase_suggestions(
         prompt,
         knowledge_base,
         min_score=min_score
     )
 
     suggestions.extend(repeated_suggestions)
-    suggestions.extend(word_suggestions)
+    suggestions.extend(phrase_suggestions)
 
     return suggestions
 
 
 def apply_suggestion(prompt, suggestion):
-    #Applies suggestion one by one
+    # Applies suggestion one by one
     if suggestion["type"] == "repeated_phrase":
         return replace_first_occurrence(
             prompt,
@@ -170,8 +157,8 @@ def apply_suggestion(prompt, suggestion):
             suggestion["replacement"]
         )
 
-    if suggestion["type"] == "redundant_word":
-        return remove_first_word_occurrence(
+    if suggestion["type"] == "redundant_phrase":
+        return remove_first_occurrence(
             prompt,
             suggestion["target"]
         )
@@ -180,7 +167,7 @@ def apply_suggestion(prompt, suggestion):
 
 
 def interactive_optimize_prompt(prompt, knowledge_base, min_score=4.0):
-    #Shows suggestions one by one asking users to accept them or not
+    # Shows suggestions one by one asking users to accept them or not
     current_prompt = prompt
     accepted_changes = []
 
@@ -206,9 +193,9 @@ def interactive_optimize_prompt(prompt, knowledge_base, min_score=4.0):
             print(f"Replace: '{suggestion['target']}' -> '{suggestion['replacement']}'")
             print(f"Reason: {suggestion['reason']}")
 
-        elif suggestion["type"] == "redundant_word":
-            print(f"Type: Redundant word")
-            print(f"Remove: '{suggestion['original_word']}'")
+        elif suggestion["type"] == "redundant_phrase":
+            print(f"Type: Redundant phrase")
+            print(f"Remove: '{suggestion['original_phrase']}'")
             print(f"Reason: {suggestion['reason']}")
             print(f"Estimated saved tokens: {suggestion['saved_tokens']}")
 
@@ -224,9 +211,12 @@ def interactive_optimize_prompt(prompt, knowledge_base, min_score=4.0):
 
         elif choice == "n":
             target = suggestion["target"]
-
             if target in knowledge_base:
-                knowledge_base[target]["score"] = 0
+                # Nullify the correct key so it isn't suggested again in this loop
+                if "redundancy_score" in knowledge_base[target]:
+                    knowledge_base[target]["redundancy_score"] = 0
+                else:
+                    knowledge_base[target]["score"] = 0
 
         elif choice == "stop":
             break
@@ -238,7 +228,7 @@ def interactive_optimize_prompt(prompt, knowledge_base, min_score=4.0):
 
 
 def show_final_report(original_prompt, optimized_prompt, accepted_changes):
-    #Shows the final optimization report
+    # Shows the final optimization report
     original_tokens = count_tokens(original_prompt)
     optimized_tokens = count_tokens(optimized_prompt)
     saved_tokens = original_tokens - optimized_tokens
@@ -267,8 +257,8 @@ def show_final_report(original_prompt, optimized_prompt, accepted_changes):
                     f"-> '{change['replacement']}'"
                 )
 
-            elif change["type"] == "redundant_word":
+            elif change["type"] == "redundant_phrase":
                 print(
-                    f"[Removed word] '{change['original_word']}' "
+                    f"[Removed phrase] '{change['original_phrase']}' "
                     f"(score: {change['score']})"
                 )

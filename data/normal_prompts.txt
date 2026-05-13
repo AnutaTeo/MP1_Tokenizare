@@ -57,3 +57,252 @@ Generate a clean README structure for a GitHub repository.
 Explain how tokenization works in large language models.
 
 Describe how caching improves web application performance.
+
+Explain recursion.
+Summarize this article.
+Write a Python function for binary search.
+Generate unit tests for this function.
+Optimize this SQL query.
+Translate this sentence to French.
+Fix the syntax error in this code.
+Explain how TCP works.
+Describe the OSI model.
+Create a REST API in Flask.
+Write a regex for email validation.
+Explain dynamic programming.
+Generate a Dockerfile for a Node.js app.
+Refactor this Java code.
+Explain pointers in C.
+Create a BFS implementation in Python.
+Write a cover letter for a software internship.
+Summarize the plot of Hamlet.
+Generate interview questions for backend developers.
+Explain the difference between threads and processes.
+Convert this JSON to CSV.
+Write a LinkedIn summary for a computer science student.
+Create a study plan for algorithms.
+Explain quicksort step by step.
+Write a SQL schema for an ecommerce platform.
+Generate a React component for a login form.
+Fix this memory leak.
+Explain normalization in databases.
+Compare HTTP and HTTPS.
+Generate sample API responses.
+Create a Markdown table from this data.
+Write documentation for this function.
+Explain inheritance in object-oriented programming.
+Create test cases for edge conditions.
+Describe how blockchain works.
+Generate a GitHub README.
+Optimize this Python loop.
+Explain Dijkstra's algorithm.
+Create a machine learning roadmap.
+Write a bash script for backups.
+Explain cache invalidation.
+Generate Kubernetes deployment YAML.
+Convert this code to TypeScript.
+Explain recursion with examples.
+Write an email requesting feedback.
+Create a tokenizer in Python.
+Generate a project timeline.
+Summarize this research paper.
+Explain overfitting in machine learning.
+Write a parser for arithmetic expressions.
+Generate a REST endpoint for user authentication.
+Create UML diagrams for this system.
+Explain virtual memory.
+Write clean code guidelines.
+Create a JWT authentication flow.
+Explain polymorphism with examples.
+Generate documentation comments.
+Write a function to merge linked lists.
+Describe how DNS works.
+Optimize this recursive function.
+Create a responsive navbar in React.
+Write a sorting algorithm comparison.
+Explain mutexes and semaphores.
+Generate database seed data.
+Create a CI/CD pipeline example.
+Write a graph traversal algorithm.
+Explain deadlocks in operating systems.
+Generate pagination logic for an API.
+Create a Redis caching strategy.
+Write an implementation of merge sort.
+Explain the producer-consumer problem.
+Generate sample chatbot prompts.
+Create a Terraform configuration.
+Write a secure password validator.
+Explain ACID properties.
+Generate a binary tree implementation.
+Write a script for log analysis.
+Explain compiler optimization techniques.
+Generate an ER diagram.
+Create a Linux process monitor.
+Explain race conditions.
+Write a markdown cheat sheet.
+Generate a study guide for networking.
+Explain breadth-first search.
+Create a CRUD API example.
+Write a matrix multiplication function.
+Generate regex practice problems.
+Explain heaps and priority queues.
+Create a secure login flow.
+Write a graph coloring algorithm.
+Generate a distributed systems overview.
+Explain hash tables.
+Create a weather app architecture.
+Write a plagiarism detector.
+Generate a recommendation system outline.
+Explain greedy algorithms.
+Write a command-line calculator.
+Generate test coverage reports.
+Create a file upload endpoint.
+Explain SSL/TLS.
+Write a text summarizer.
+Generate examples of design patterns.
+Create a websocket chat server.
+Explain finite state machines.
+Write a lexical analyzer.
+Generate sorting benchmark tests.
+Create a microservices architecture example.
+Explain load balancing.
+Write a shortest-path algorithm.
+Generate API authentication middleware.
+Create a binary search tree implementation.
+Explain memoization.
+Write a simple compiler example.
+Generate cloud architecture recommendations.
+
+Explain recursion in Python step by step.
+Explain recursion in Python in detail.
+Give a simple explanation of recursion.
+Summarize this text in bullet points.
+Write a short Python function to sort a list.
+Explain how binary search works step by step.
+Describe neural networks in a simple way.
+Translate this sentence into French.
+Debug this Python function and explain the issue.
+Write a SQL query to filter users by age.
+Explain object-oriented programming concepts in detail.
+Give examples of recursion in programming.
+Convert this explanation into simpler terms.
+Explain the difference between TCP and UDP.
+Describe the water cycle step by step.
+Write a function that finds the maximum in a list.
+Explain quicksort algorithm in simple terms.
+Summarize this article clearly.
+Generate a short story about space exploration.
+Explain how hash maps work in detail.
+
+Describe the process of Philosophy in table format.
+Summarize the history of Fitness in table format.
+Summarize the history of Gardening in detailed analysis.
+Provide a detailed analysis guide for Law.
+Compare two major theories in Music with a comparison.
+Explain Marketing using a comparison.
+Describe the process of Gardening in chronological order.
+Describe the process of Cooking in chronological order.
+Review the impact of Real Estate on society using a chronological order.
+Summarize the history of Travel in table format.
+Describe the process of Cooking in comparison.
+Analyze the current trends in Economics using a detailed analysis.
+Provide a easy to understand guide for Sociology.
+Explain Economics using a chronological order.
+Summarize the history of Sociology in table format.
+List the essential principles of Astronomy in a table format.
+Draft a professional document for Astronomy with a chronological order.
+Analyze the current trends in Travel using a comparison.
+Draft a professional document for Economics with a comparison.
+Review the impact of Biology on society using a comparison.
+Summarize the history of Astronomy in outline.
+Provide a detailed analysis guide for Logistics.
+List the essential principles of Cooking in a pros and cons.
+List the essential principles of Fitness in a bulleted list.
+Summarize the history of Logistics in chronological order.
+Analyze the current trends in Astronomy using a bulleted list.
+Compare two major theories in Fitness with a pros and cons.
+Draft a professional document for Cooking with a pros and cons.
+Draft a professional document for Cooking with a step-by-step.
+Create a step-by-step for a project in Marketing.
+Explain Creative Writing using a summary.
+Compare two major theories in Fitness with a pros and cons.
+Describe the process of Music in pros and cons.
+Provide a pros and cons guide for Logistics.
+List the essential principles of Fitness in a summary.
+Draft a professional document for History with a summary.
+Summarize the history of Fitness in comparison.
+Analyze the current trends in Gardening using a table format.
+Describe the process of Real Estate in pros and cons.
+Summarize the history of Interior Design in easy to understand.
+Describe the process of Creative Writing in bulleted list.
+List the essential principles of Archeology in a pros and cons.
+Create a easy to understand for a project in Archeology.
+Provide a table format guide for Law.
+Draft a professional document for Law with a detailed analysis.
+Draft a professional document for Gardening with a bulleted list.
+Compare two major theories in Gardening with a step-by-step.
+Explain Logistics using a summary.
+Review the impact of Biology on society using a detailed analysis.
+Review the impact of Marketing on society using a outline.
+Create a summary for a project in Interior Design.
+Describe the process of Interior Design in summary.
+Draft a professional document for Archeology with a summary.
+List the essential principles of Archeology in a pros and cons.
+Analyze the current trends in Economics using a easy to understand.
+Summarize the history of Cooking in bulleted list.
+Review the impact of Biology on society using a summary.
+Summarize the history of Real Estate in outline.
+Summarize the history of Travel in detailed analysis.
+List the essential principles of Gardening in a summary.
+List the essential principles of Real Estate in a detailed analysis.
+Provide a outline guide for Sociology.
+Provide a chronological order guide for Astronomy.
+Summarize the history of Interior Design in summary.
+Review the impact of Law on society using a chronological order.
+Explain Marketing using a summary.
+Provide a table format guide for Gardening.
+Provide a outline guide for Energy.
+Explain Philosophy using a easy to understand.
+Describe the process of Logistics in table format.
+Explain Philosophy using a step-by-step.
+Create a step-by-step for a project in Sociology.
+Summarize the history of Travel in detailed analysis.
+Create a table format for a project in Archeology.
+Explain Interior Design using a table format.
+Summarize the history of Interior Design in chronological order.
+Draft a professional document for Psychology with a table format.
+Compare two major theories in Marketing with a table format.
+Summarize the history of Cooking in step-by-step.
+Create a detailed analysis for a project in Law.
+Review the impact of Creative Writing on society using a detailed analysis.
+Compare two major theories in Real Estate with a comparison.
+Compare two major theories in Creative Writing with a table format.
+Analyze the current trends in Gardening using a outline.
+Describe the process of Travel in detailed analysis.
+Review the impact of Law on society using a summary.
+Analyze the current trends in Logistics using a pros and cons.
+Analyze the current trends in Law using a comparison.
+Explain Sociology using a easy to understand.
+Summarize the history of Interior Design in comparison.
+Summarize the history of Biology in bulleted list.
+List the essential principles of Travel in a summary.
+Analyze the current trends in Astronomy using a easy to understand.
+Explain Sociology using a pros and cons.
+Provide a table format guide for Travel.
+Provide a bulleted list guide for Philosophy.
+Describe the process of Cooking in table format.
+List the essential principles of Philosophy in a easy to understand.
+Provide a chronological order guide for Marketing.
+Review the impact of Gardening on society using a outline.
+
+Provide a step-by-step recipe for authentic Pad Thai. Include a list of essential ingredients and common substitutes.
+Compare and contrast Stoicism and Epicureanism. Use a table to highlight differences in their views on pleasure and pain.
+Draft a 3rd-party logistics (3PL) contract outline. Cover liability, termination clauses, and service level agreements (SLAs).
+Write a short story about a lighthouse keeper in 2050. Focus on the atmosphere. Avoid dialogue.
+Summarize the causes of the French Revolution. Categorize them into social, political, and economic factors.
+Analyze the impact of remote work on urban real estate. List five primary consequences.
+Explain the process of photosynthesis for a middle school audience. Use a simple, easy to understand analogy.
+Create a travel itinerary for a 3-day trip to Kyoto. Include specific shrines and estimated travel times between locations.
+Review the pros and cons of nuclear energy. Use a bulleted list for clarity.
+Describe the evolution of jazz music in the early 20th century. Focus on key figures and geographic shifts.
+

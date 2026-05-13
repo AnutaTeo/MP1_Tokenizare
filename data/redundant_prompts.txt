@@ -44,10 +44,303 @@ This documentation is actually extremely very difficult to properly understand b
 
 I genuinely honestly believe this code snippet is very poorly optimized and unnecessarily complicated for such a relatively simple task.
 
-Please explain step by step in a very detailed manner exactly how authentication systems usually work internally in modern web applications.
+I really need you to Please explain step by step in a very detailed manner exactly how authentication systems usually work internally in modern web applications.
 
 I literally just simply want a basic straightforward answer without any extremely complicated technical terminology whatsoever.
 
 Could you maybe possibly provide a more cleaner and better optimized implementation approach for this function?
 
 This prompt is honestly really way too excessively verbose and repetitive without providing much additional meaningful information overall.
+
+Can you please explain recursion to me in a simple and easy-to-understand way?
+I would really appreciate it if you could summarize this article for me.
+Could you please write a Python function that implements binary search?
+Please generate some useful unit tests for this function if possible.
+Can you help me optimize this SQL query because it is running slowly?
+I really need you to Please translate this sentence into French for me.
+I need help fixing the syntax error in this code because I cannot find it.
+Can you explain how TCP works in a detailed but simple way?
+I really need you to Please describe the OSI model in a clear and understandable manner.
+Could you create a REST API in Flask for me if possible?
+Please write a regex expression for validating email addresses.
+Can you explain dynamic programming in a simple beginner-friendly way?
+Generate a Dockerfile for a Node.js application please.
+Could you help refactor this Java code to make it cleaner and more efficient?
+Please explain pointers in the C programming language.
+Can you create a BFS implementation in Python for me?
+I would appreciate it if you could write a cover letter for a software internship.
+Please summarize the plot of Hamlet in a short concise summary.
+Generate some backend developer interview questions please.
+Can you explain the difference between threads and processes clearly?
+Please convert this JSON data into CSV format.
+Could you write a LinkedIn summary for a computer science student?
+Please create a study plan for learning algorithms and data structures.
+Can you explain quicksort step by step in detail?
+Generate a SQL schema for an ecommerce platform please.
+Could you create a React login form component for me?
+Please help me fix this memory leak issue.
+Explain database normalization in a simple and understandable way.
+Can you compare HTTP and HTTPS and explain the differences?
+Please generate some example API responses.
+Create a Markdown table from this data please.
+Could you write documentation for this function for me?
+Please explain inheritance in object-oriented programming clearly.
+Generate edge-case test cases for this function please.
+Can you describe how blockchain technology works?
+Please generate a GitHub README file for this project.
+Help me optimize this Python loop because it is inefficient.
+Could you explain Dijkstra's algorithm step by step?
+Please create a roadmap for learning machine learning.
+Generate a bash backup script for me please.
+Can you explain cache invalidation in simple terms?
+Please generate Kubernetes deployment YAML configuration files.
+Convert this code into TypeScript please.
+Could you explain recursion again with practical examples?
+Please write an email asking for feedback professionally.
+Can you create a tokenizer in Python for me?
+Please generate a project development timeline.
+Could you summarize this research paper in a concise way?
+Explain overfitting in machine learning in simple terms.
+Please write a parser for arithmetic expressions.
+Generate a REST API endpoint for user authentication please.
+Could you create UML diagrams for this software system?
+Please explain how virtual memory works.
+Write some clean code guidelines and best practices please.
+Could you create a JWT authentication flow example?
+Explain polymorphism with practical examples in object-oriented programming.
+Please generate documentation comments for this code.
+Can you write a function that merges linked lists together?
+Please describe how DNS works in detail.
+Help me optimize this recursive function because it is too slow.
+Could you create a responsive navigation bar in React?
+Please compare different sorting algorithms.
+Can you explain mutexes and semaphores clearly and simply?
+Generate database seed data examples please.
+Could you create an example CI/CD pipeline for me?
+Please write a graph traversal algorithm implementation.
+Can you explain deadlocks in operating systems in detail?
+Generate pagination logic for a REST API please.
+Could you create a Redis caching strategy example?
+Please implement merge sort in Python.
+Can you explain the producer-consumer synchronization problem?
+Generate some example chatbot prompts please.
+Could you create a Terraform configuration example?
+Please write a secure password validation function.
+Explain ACID database properties in a beginner-friendly way.
+Generate a binary tree implementation please.
+Could you write a script for analyzing logs?
+Please explain compiler optimization techniques simply.
+Generate an ER diagram for this database system please.
+Could you create a Linux process monitoring tool?
+Please explain race conditions in multithreaded programming.
+Write a markdown cheat sheet for beginners please.
+Generate a networking study guide please.
+Could you explain breadth-first search with examples?
+Please create an example CRUD API implementation.
+Write a matrix multiplication function in Python please.
+Generate regex practice exercises and examples.
+Could you explain heaps and priority queues clearly?
+Please create a secure login authentication flow.
+Write a graph coloring algorithm implementation please.
+Generate an overview of distributed systems concepts.
+Could you explain how hash tables work internally?
+Please create a weather application architecture example.
+Write a plagiarism detection program please.
+Generate a recommendation system design outline.
+Could you explain greedy algorithms in simple terms?
+Please write a command-line calculator application.
+Generate test coverage reports for this project please.
+Could you create a file upload API endpoint?
+Please explain SSL and TLS protocols clearly.
+Write a text summarization tool please.
+Generate examples of common software design patterns.
+Could you create a websocket-based chat server?
+Please explain finite state machines simply.
+Write a lexical analyzer implementation please.
+Generate benchmark tests for sorting algorithms.
+Could you create a microservices architecture example?
+Please explain load balancing techniques.
+Write a shortest-path graph algorithm please.
+Generate API authentication middleware examples.
+Could you create a binary search tree implementation?
+Please explain memoization with examples.
+Write a simple compiler example in Python please.
+
+Could you please please explain recursion in Python in a very very simple and easy to understand way please.
+I really really need you to very carefully and thoroughly explain recursion step by step in extreme detail please.
+Can you please please help me understand this in a very simple and easy to understand manner please please.
+I would really appreciate it if you could very carefully and thoroughly explain this concept in detail please.
+Please please please explain this in a very detailed and extremely easy to understand way for me please.
+I just really really need a very very simple step by step explanation of this topic please please.
+Could you possibly help me understand this in a simple and very easy way please please please.
+I really do not understand this at all so please please explain it very slowly and carefully.
+I would appreciate a very very detailed, thorough, and simple explanation if possible please please.
+Can you explain this in a very very simple way step by step please please.
+Please help me understand this in a simple and easy to follow explanation please please.
+I really need a detailed explanation that is very easy to understand and follow please please.
+Could you explain this in a very simple, clear, and detailed way please please please.
+I would like a step by step explanation that is very easy to understand please please.
+Please explain this thoroughly in a simple and easy to understand manner please please.
+I really really really need help understanding this concept please please please.
+Can you please please explain this very very carefully in detail please.
+I just cannot understand this so please explain it very simply please please.
+Please please help me understand this topic in extreme detail please.
+I really need you to explain this in the simplest way possible please please.
+
+It would be great if you could please literally describe the process of philosophy in table format, please.
+Basically, please just summarize the history of fitness in table format, literally please.
+Could you please just very literally summarize the history of gardening in detailed analysis, please and thank you.
+Basically, I was wondering if you could please provide a detailed analysis guide for law please, thanks.
+I'm basically looking for you to please compare two major theories in music with a comparison, please.
+Could you please just very literally explain marketing using a comparison, basically.
+Could you please just very literally describe the process of gardening in chronological order, basically it would be helpful.
+Could you please just literally describe the process of cooking in chronological order, literally please.
+It would be great if you could please literally review the impact of real estate on society using a chronological order, just for me please.
+I basically need you to please summarize the history of travel in table format, basically.
+Please, I'd like you to basically describe the process of cooking in comparison, literally please.
+Hi there, could you please very literally analyze the current trends in economics using a detailed analysis, literally please.
+I'm basically looking for you to please provide a easy to understand guide for sociology literally.
+I'm basically looking for you to please explain economics using a chronological order literally basically.
+If you don't mind, could you please basically summarize the history of sociology in table format, please.
+Basically, I was wondering if you could please list the essential principles of astronomy in a table format, please.
+I'm basically looking for you to please draft a professional document for astronomy with a chronological order literally.
+Could you please just very literally analyze the current trends in travel using a comparison, basically it would be helpful.
+Could you please just very literally draft a professional document for economics with a comparison, just basically please.
+If you don't mind, could you please basically review the impact of biology on society using a comparison, basically it would be helpful.
+It would be great if you could please literally summarize the history of astronomy in outline, basically.
+Could you please just very literally provide a detailed analysis guide for logistics please, thanks.
+I basically need you to please list the essential principles of cooking in a pros and cons, please.
+I basically need you to please list the essential principles of fitness in a bulleted list, just basically please.
+It would be great if you could please literally summarize the history of logistics in chronological order literally.
+It would be great if you could please literally analyze the current trends in astronomy using a bulleted list literally basically.
+Could you please just literally compare two major theories in fitness with a pros and cons, please.
+I basically need you to please draft a professional document for cooking with a pros and cons, please.
+Please, I'd like you to basically draft a professional document for cooking with a step-by-step literally basically.
+Could you please just literally create a step-by-step for a project in marketing, please and thank you.
+If you don't mind, could you please basically explain creative writing using a summary literally.
+Basically, please just compare two major theories in fitness with a pros and cons, basically it would be helpful.
+I'm basically looking for you to please describe the process of music in pros and cons, please and thank you.
+I'm basically looking for you to please provide a pros and cons guide for logistics, basically it would be helpful.
+I'm basically looking for you to please list the essential principles of fitness in a summary, please and thank you.
+It would be great if you could please literally draft a professional document for history with a summary, literally please.
+Basically, please just summarize the history of fitness in comparison, basically.
+I basically need you to please analyze the current trends in gardening using a table format, literally please.
+I basically need you to please describe the process of real estate in pros and cons literally.
+Basically, please just summarize the history of interior design in easy to understand, literally please.
+Please, I'd like you to basically describe the process of creative writing in bulleted list, basically it would be helpful.
+If you don't mind, could you please basically list the essential principles of archeology in a pros and cons please, thanks.
+Could you please just very literally create a easy to understand for a project in archeology, basically.
+Could you please just literally provide a table format guide for law, please.
+Basically, please just draft a professional document for law with a detailed analysis, please.
+Please, I'd like you to basically draft a professional document for gardening with a bulleted list, literally please.
+I'm basically looking for you to please compare two major theories in gardening with a step-by-step, just basically please.
+Hi there, could you please very literally explain logistics using a summary, please.
+Could you please just literally review the impact of biology on society using a detailed analysis, basically.
+Could you please just literally review the impact of marketing on society using a outline please, thanks.
+Could you please just very literally create a summary for a project in interior design literally.
+It would be great if you could please literally describe the process of interior design in summary, just for me please.
+Basically, I was wondering if you could please draft a professional document for archeology with a summary, just for me please.
+Could you please just literally list the essential principles of archeology in a pros and cons, please and thank you.
+I basically need you to please analyze the current trends in economics using a easy to understand literally basically.
+Please, I'd like you to basically summarize the history of cooking in bulleted list literally.
+I basically need you to please review the impact of biology on society using a summary literally basically.
+I'm basically looking for you to please summarize the history of real estate in outline, please and thank you.
+Hi there, could you please very literally summarize the history of travel in detailed analysis literally.
+Basically, I was wondering if you could please list the essential principles of gardening in a summary, please and thank you.
+Could you please just literally list the essential principles of real estate in a detailed analysis, literally please.
+It would be great if you could please literally provide a outline guide for sociology, please.
+I'm basically looking for you to please provide a chronological order guide for astronomy literally.
+Basically, please just summarize the history of interior design in summary, please.
+Could you please just very literally review the impact of law on society using a chronological order literally.
+I'm basically looking for you to please explain marketing using a summary literally.
+If you don't mind, could you please basically provide a table format guide for gardening, just basically please.
+I basically need you to please provide a outline guide for energy literally basically.
+Hi there, could you please very literally explain philosophy using a easy to understand, please.
+Basically, I was wondering if you could please describe the process of logistics in table format, please.
+It would be great if you could please literally explain philosophy using a step-by-step literally basically.
+If you don't mind, could you please basically create a step-by-step for a project in sociology, just for me please.
+Basically, please just summarize the history of travel in detailed analysis, just for me please.
+Could you please just literally create a table format for a project in archeology, basically.
+It would be great if you could please literally explain interior design using a table format, please.
+Please, I'd like you to basically summarize the history of interior design in chronological order, basically it would be helpful.
+I'm basically looking for you to please draft a professional document for psychology with a table format, please and thank you.
+Basically, please just compare two major theories in marketing with a table format literally.
+Basically, I was wondering if you could please summarize the history of cooking in step-by-step, literally please.
+Could you please just literally create a detailed analysis for a project in law, please and thank you.
+Basically, I was wondering if you could please review the impact of creative writing on society using a detailed analysis, basically.
+Hi there, could you please very literally compare two major theories in real estate with a comparison please, thanks.
+If you don't mind, could you please basically compare two major theories in creative writing with a table format, literally please.
+Basically, please just analyze the current trends in gardening using a outline literally basically.
+I'm basically looking for you to please describe the process of travel in detailed analysis literally.
+Basically, I was wondering if you could please review the impact of law on society using a summary, basically it would be helpful.
+I basically need you to please analyze the current trends in logistics using a pros and cons literally.
+Basically, I was wondering if you could please analyze the current trends in law using a comparison, just for me please.
+Hi there, I basically need you to please explain sociology using a easy to understand, please and thank you.
+If you don't mind, could you please basically summarize the history of interior design in comparison literally basically.
+Could you please just very literally summarize the history of biology in bulleted list, please.
+I'm basically looking for you to please list the essential principles of travel in a summary please, thanks.
+Basically, please just analyze the current trends in astronomy using a easy to understand, please.
+Hello there, I'm basically looking for you to please explain sociology using a pros and cons, just for me please.
+Please, I'd like you to basically provide a table format guide for travel please, thanks.
+Basically, please just provide a bulleted list guide for philosophy, please.
+If you don't mind, could you please basically describe the process of cooking in table format, just for me please.
+Could you please just very literally list the essential principles of philosophy in a easy to understand, basically.
+I basically need you to please provide a chronological order guide for marketing, just for me please.
+I'm basically looking for you to please review the impact of gardening on society using a outline, please and thank you.
+
+Hi there, could you please very literally give me a step-by-step recipe for Pad Thai? Basically, just make sure to include all the ingredients, please.
+I was wondering if you could please compare Stoicism and Epicureanism for me? Use a table, basically, and literally show the differences, please.
+Basically, I need you to please draft a 3PL contract outline. It should really include things like liability and SLAs, very literally and step-by-step.
+Please write a story, basically about a lighthouse keeper in 2050. Just literally focus on the vibe and atmosphere, please, and basically don't use dialogue.
+Could you please summarize the French Revolution causes? Basically, just literally put them into categories like social and economic, please.
+I'm basically looking for an analysis, please, of how remote work literally affects cities and real estate. Please list like five things, basically.
+Hello, Could you please explain photosynthesis? Just basically make it very easy to understand and literally use an analogy for me, please.
+Please, I'd like you to basically make a travel itinerary for Kyoto for 3 days. Literally include shrines and basically give me times, please.
+Hello there, Could you please just literally review the pros and cons of nuclear energy for me? Basically use a list, please, it's really helpful.
+Basically, please describe how jazz literally evolved in the early 20th century. Just focus on people and places, basically, please.
+I was just wondering if you could possibly help me summarize this article in around three bullet points if that's okay with you.
+What I need you to do is translate the following text that I have here into the French language please.
+Could you please go ahead and write me a Python function that is able to reverse a string for me?
+I would really appreciate it if you could take the time to explain to me how it is that neural networks actually work in practice.
+I am looking for some ideas and suggestions for around five healthy breakfast ideas that I could try out.
+What do you think are the main causes of climate change and can you explain them in detail for me?
+I need you to go ahead and fix the bug that exists in this code that I am providing to you right now.
+Could you please generate for me a weekly meal plan that would work well for two people living together?
+I want you to compare and contrast React and Vue in terms of which one is better for the purpose of building SPAs.
+Please help me write a cover letter for a software engineer role that I am currently in the process of applying for.
+What exactly is the difference between TCP and UDP protocols and how do they differ from one another?
+Could you suggest around three or so book recommendations for someone who happens to like sci-fi as a genre?
+I am trying to figure out how to set up a PostgreSQL database and I was wondering if you could help me with that.
+Can you write me a regular expression that is capable of matching email addresses in a string?
+Would you be able to describe the water cycle for me in terms that are simple and easy to understand?
+Could you tell me what the key events were that took place during the course of World War II?
+I need you to create a SQL query for me that will be able to find all the duplicate records in my database.
+I was hoping you could help me outline a presentation that lasts around 10 minutes on the topic of machine learning.
+What do you think would be the very best way for me to go about learning Spanish as a new language?
+I need some help debugging this JavaScript snippet that I have here in front of me right now.
+Please help me write unit tests for this function that I have written so that I can make sure it works.
+Could you please explain to me what the difference is between supervised learning and unsupervised learning?
+I would like to understand how it is that HTTPS actually works under the hood so to speak.
+Can you summarize for me what the main pros and cons of remote work actually are in practice?
+Please give me a recipe that I can use to make chocolate chip cookies at home by myself.
+I was wondering if you could tell me what it is that blockchain is and also explain to me how it actually works.
+I need some help writing a LinkedIn bio for a professional who works as a data scientist in the industry.
+I would like you to create a to-do list application for me using the React framework if that is possible.
+Can you describe for me what the symptoms of burnout are and how I might be able to recognize them?
+I am having trouble understanding how to use async/await in Python and was wondering if you could help me.
+It is very very important that you carefully carefully review all of the following information before proceeding.
+Due to the fact that I am not able to find the answer on my own, I am reaching out to you for assistance.
+At this point in time I would like to request that you provide me with some information about machine learning.
+I want to make it very clear that what I am asking for is a simple simple explanation of how APIs work.
+The thing that I am trying to accomplish here is to basically just get a summary of this document.
+In order to be able to accomplish the goal that I have set for myself, I need your help with this task.
+I am writing to you today because I would like to ask you for some help with my Python code that I have.
+Could you help me out with this? I think it would be really really helpful if you could take a look at it.
+I just wanted to say that I think that it would be really beneficial for you to help me with this task today.
+The reason why I am asking this question is because I need to know the answer to it for my project.
+As far as I am concerned, the most important thing right now is to get this code to work properly.
+I believe that it might be possible that there could be a bug somewhere in this code that I have written.
+What I am trying to say is that I need help with writing a function that can sort a list of numbers.
+I would just like to point out that the issue that I am experiencing is related to my database connection.
+Can you tell me what the steps are that I need to follow in order to deploy an app to AWS?
+
