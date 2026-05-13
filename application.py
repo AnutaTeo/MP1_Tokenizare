@@ -48,21 +48,44 @@ def get_tokens(text):
 
 
 def get_redundant_words(knowledge_base, min_score=4.0):
-    #Extracts redundant words
+    # Extracts redundant single words from both old and new JSON formats
     redundant_words = {}
 
     for pattern, data in knowledge_base.items():
-        if data.get("type") == "redundant_word":
-            score = data.get("score", 0)
+        pattern_clean = clean_word(pattern)
 
-            if score >= min_score:
-                redundant_words[pattern] = score
+        if not pattern_clean:
+            continue
+
+        # Only highlight single words in the old GUI logic
+        if len(pattern_clean.split()) != 1:
+            continue
+
+        pattern_type = data.get("type")
+
+        if pattern_type not in ["redundant_word", "redundant_phrase"]:
+            continue
+
+        ngram_size = data.get("ngram_size", len(pattern_clean.split()))
+
+        if ngram_size != 1:
+            continue
+
+        score = data.get("redundancy_score", data.get("score", 0))
+
+        try:
+            score = float(score)
+        except (TypeError, ValueError):
+            score = 0
+
+        if score >= min_score:
+            redundant_words[pattern_clean] = score
 
     return redundant_words
 
 
 def get_repeated_phrases(knowledge_base):
-    #Extracts repeated phrases
+    # Extracts repeated phrases if they exist in the JSON
     repeated_phrases = {}
 
     for pattern, data in knowledge_base.items():
@@ -136,7 +159,7 @@ class MP1App:
         )
 
         sample_prompt = (
-            "I honestly really really need you to very carefully explain this extremely complicated code in a very very simple way."
+            "Could you please please summarize this article in a very very short and concise way for me please?"
         )
 
         self.prompt_text.insert("1.0", sample_prompt)

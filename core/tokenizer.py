@@ -211,7 +211,7 @@ def build_knowledge_base(
     knowledge = {}
 
     # learn multiple ngram sizes (skipping n=1 is now enforced inside compute_redundancy_scores)
-    for n in [1, 2, 3, 4]:
+    for n in [1, 2, 3, 4, 5]:
 
         print(f"Analyzing {n}-grams...")
 
