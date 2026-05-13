@@ -77,8 +77,6 @@ def extract_ngrams(words, n=6):
 
 
 # FREQUENCY MAPS
-
-
 def build_ngram_frequency_map(lines,n=5):
 
     counter = Counter()
