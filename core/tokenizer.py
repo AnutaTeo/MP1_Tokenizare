@@ -1,184 +1,378 @@
-# TODO: use tiktoken to process text
-# feed training data -> json knowledge dictionary 
-
 import json
-import re 
+import math
+import re
 from collections import Counter
 import tiktoken
 
 encoding = tiktoken.get_encoding("cl100k_base")
 
+
+
+# DATA LOADING
+
+
 def load_dataset(path):
+
     with open(path, "r", encoding="utf-8") as file:
-        return file.readlines()
-    
-# set all text to lowercase, remove extra spaces and whitespaces
+
+        return [
+
+            line.strip()
+
+            for line in file.readlines()
+
+            if line.strip()
+        ]
+
+
+
+# TEXT NORMALIZATION
+
+
 def normalize_text(text):
+
     text = text.lower()
 
-    # remove extra spaces
     text = re.sub(r"\s+", " ", text)
 
     return text.strip()
 
 
-# use regex to extract all words
+
+# WORD EXTRACTION
+
+
 def extract_words(text):
+
     return re.findall(r"\b\w+\b", text.lower())
 
-# compute cost
-def token_count(text):
-    return len(encoding.encode(text))
 
-# word frequency analysis 
-def build_frequency_map(lines):
+
+# TOKENIZATION
+
+
+def tokenize_text(text):
+
+    return encoding.encode(text)
+
+
+def token_count(text):
+
+    return len(tokenize_text(text))
+
+
+
+# NGRAM EXTRACTION
+
+
+def extract_ngrams(words, n=6):
+
+    return [
+
+        " ".join(words[i:i+n])
+
+        for i in range(len(words) - n + 1)
+    ]
+
+
+
+# FREQUENCY MAPS
+
+
+def build_ngram_frequency_map(
+    lines,
+    n=3
+):
+
     counter = Counter()
 
     for line in lines:
+
         normalized = normalize_text(line)
 
         words = extract_words(normalized)
 
-        counter.update(words)
+        ngrams = extract_ngrams(words, n)
+
+        counter.update(ngrams)
 
     return counter
 
-# repetition detection
-def detect_repeated_phrases(lines):
-    repeated = Counter()
+
+
+# TOKEN EFFICIENCY STATS
+
+
+def compute_efficiency_stats(lines):
+
+    total_tokens = 0
+    total_words = 0
+
+    unique_tokens = set()
 
     for line in lines:
+
+        tokens = tokenize_text(line)
+
         words = extract_words(line)
 
-        for i in range(len(words) - 1):
+        total_tokens += len(tokens)
 
-            if words[i] == words[i + 1]:
+        total_words += len(words)
 
-                phrase = f"{words[i]} {words[i + 1]}"
+        unique_tokens.update(tokens)
 
-                repeated[phrase] += 1
+    return {
 
-    return repeated
+        "total_tokens":
+            total_tokens,
 
-# computes redundancy scores for words based on their frequency in the normal text
-# vs. their frequency in the repeated phrases
+        "total_words":
+            total_words,
+
+        "tokens_per_word":
+            round(
+                total_tokens / max(total_words, 1),
+                3
+            ),
+
+        "unique_token_ratio":
+            round(
+                len(unique_tokens)
+                /
+                max(total_tokens, 1),
+                3
+            )
+    }
+
+
+
+# REDUNDANCY MINING
+
 
 def compute_redundancy_scores(
+
     normal_freq,
-    redundant_freq
+    redundant_freq,
+
+    min_redundant_frequency=2,
+    threshold=1.5
 ):
+
     scores = {}
 
-    for word, redundant_count in redundant_freq.items():
+    for phrase, redundant_count in redundant_freq.items():
 
-        normal_count = normal_freq.get(word, 1)
+        if redundant_count < min_redundant_frequency:
+            continue
 
-        score = redundant_count / normal_count
+        # FIX 1: skip unigrams — single words produce too much noise
+        if len(phrase.split()) < 2:
+            continue
 
-        # threshold
-        if score >= 3:
+        normal_count = normal_freq.get(phrase, 0)
 
-            scores[word] = {
-                "redundancy_score": round(score, 2),
-                "normal_frequency": normal_count,
-                "redundant_frequency": redundant_count
+        # smoothed statistical score
+        score = (
+
+            math.log(redundant_count + 1)
+
+            /
+
+            math.log(normal_count + 2)
+        )
+
+        if score >= threshold:
+
+            scores[phrase] = {
+
+                "type":
+                    "redundant_phrase",
+
+                # FIX 3: tag source so statistical vs curated entries are distinguishable
+                "source":
+                    "statistical",
+
+                "redundancy_score":
+                    round(score, 3),
+
+                "normal_frequency":
+                    normal_count,
+
+                "redundant_frequency":
+                    redundant_count,
+
+                "token_cost":
+                    token_count(phrase),
+
+                "word_count":
+                    len(extract_words(phrase)),
+
+                "ngram_size":
+                    len(phrase.split())
             }
 
     return scores
 
 
-def build_knowledge_base(redundancy_scores, repeated_phrases):
+
+# KNOWLEDGE BASE
+
+
+def build_knowledge_base(
+
+    normal_lines,
+    redundant_lines
+):
+
     knowledge = {}
 
-    for word, data in redundancy_scores.items():
+    # learn multiple ngram sizes (skipping n=1 is now enforced inside compute_redundancy_scores)
+    for n in [1, 2, 3, 4]:
 
-        knowledge[word] = {
-            "type": "redundant_word",
-            "score": data["redundancy_score"],
-            "normal_frequency": data["normal_frequency"],
-            "redundant_frequency": data["redundant_frequency"],
-            "suggested_action": "remove_or_replace"
-        }
+        print(f"Analyzing {n}-grams...")
 
-    for phrase, freq in repeated_phrases.items():
+        normal_freq = build_ngram_frequency_map(
+            normal_lines,
+            n=n
+        )
 
-        knowledge[phrase] = {
-            "type": "repeated_phrase",
-            "frequency": freq,
-            "suggested_action": "compress"
-        }
+        redundant_freq = build_ngram_frequency_map(
+            redundant_lines,
+            n=n
+        )
+
+        scores = compute_redundancy_scores(
+            normal_freq,
+            redundant_freq
+        )
+
+        # FIX 2: keep the higher-scoring entry instead of silently overwriting
+        for phrase, data in scores.items():
+            if (
+                phrase not in knowledge
+                or data["redundancy_score"] > knowledge[phrase]["redundancy_score"]
+            ):
+                knowledge[phrase] = data
 
     return knowledge
 
-def save_knowledge_base(data, path):
+
+
+# SAVE KNOWLEDGE BASE
+
+
+def save_knowledge_base(
+
+    data,
+    path
+):
 
     with open(path, "w", encoding="utf-8") as file:
 
         json.dump(
+
             data,
             file,
-            indent=4
+
+            indent=4,
+
+            ensure_ascii=False
         )
 
 
-def analyze_prompt(prompt):
 
-    tokens = token_count(prompt)
-
-    words = extract_words(prompt)
-
-    return {
-        "tokens": tokens,
-        "word_count": len(words),
-        "tokens_per_word": round(tokens / max(len(words), 1), 2)
-    }
+# MAIN
 
 
 def main():
 
     print("Loading datasets...")
 
-    normal_lines = load_dataset("data/normal_prompts.txt")
+    normal_lines = load_dataset(
+        "data/normal_prompts.txt"
+    )
 
-    redundant_lines = load_dataset("data/redundant_prompts.txt")
-
-    print("Building frequency maps...")
-
-    normal_freq = build_frequency_map(normal_lines)
-
-    redundant_freq = build_frequency_map(redundant_lines)
-    print(normal_freq.most_common(20))
-    print(redundant_freq.most_common(20))
-
-    print("Detecting repeated phrases...")
-
-    repeated_phrases = detect_repeated_phrases(redundant_lines)
-
-    print("Computing redundancy scores...")
-
-    redundancy_scores = compute_redundancy_scores(normal_freq, redundant_freq)
+    redundant_lines = load_dataset(
+        "data/redundant_prompts.txt"
+    )
 
     print("Building knowledge base...")
 
-    knowledge = build_knowledge_base(redundancy_scores, repeated_phrases)
+    knowledge = build_knowledge_base(
 
-    save_knowledge_base(knowledge, "knowledge/redundant_patterns.json")
+        normal_lines,
+        redundant_lines
+    )
+
+    print("Saving knowledge base...")
+
+    save_knowledge_base(
+
+        knowledge,
+
+        "knowledge/redundant_patterns.json"
+    )
 
     print("\nKnowledge base generated.")
 
-    print(f"Patterns found: {len(knowledge)}")
+    print(
+        f"Patterns discovered: "
+        f"{len(knowledge)}"
+    )
 
-    # sample test
-    sample = redundant_lines[0]
+    print("\nTop patterns:\n")
 
-    print("\nSample Prompt:")
-    print(sample)
+    sorted_patterns = sorted(
 
-    stats = analyze_prompt(sample)
+        knowledge.items(),
 
-    print("\nPrompt Statistics:")
-    print(stats)
+        key=lambda x:
+            x[1]["redundancy_score"],
 
+        reverse=True
+    )
+
+    for phrase, data in sorted_patterns[:20]:
+
+        print(f"Phrase: {phrase}")
+
+        print(
+            f"Score: "
+            f"{data['redundancy_score']}"
+        )
+
+        print(
+            f"Token cost: "
+            f"{data['token_cost']}"
+        )
+
+        print(
+            f"Redundant freq: "
+            f"{data['redundant_frequency']}"
+        )
+
+        print("-" * 40)
+
+    print("\nEfficiency Stats:\n")
+
+    print(
+
+        "NORMAL:",
+
+        compute_efficiency_stats(
+            normal_lines
+        )
+    )
+
+    print(
+
+        "REDUNDANT:",
+
+        compute_efficiency_stats(
+            redundant_lines
+        )
+    )
 
 
 if __name__ == "__main__":
