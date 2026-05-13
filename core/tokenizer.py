@@ -79,10 +79,7 @@ def extract_ngrams(words, n=6):
 # FREQUENCY MAPS
 
 
-def build_ngram_frequency_map(
-    lines,
-    n=3
-):
+def build_ngram_frequency_map(lines,n=5):
 
     counter = Counter()
 
@@ -166,21 +163,10 @@ def compute_redundancy_scores(
         if redundant_count < min_redundant_frequency:
             continue
 
-        # FIX 1: skip unigrams — single words produce too much noise
-        if len(phrase.split()) < 2:
-            continue
-
         normal_count = normal_freq.get(phrase, 0)
 
         # smoothed statistical score
-        score = (
-
-            math.log(redundant_count + 1)
-
-            /
-
-            math.log(normal_count + 2)
-        )
+        score = (math.log(redundant_count + 1) / math.log(normal_count + 2)) * len(phrase.split())
 
         if score >= threshold:
 
@@ -189,7 +175,6 @@ def compute_redundancy_scores(
                 "type":
                     "redundant_phrase",
 
-                # FIX 3: tag source so statistical vs curated entries are distinguishable
                 "source":
                     "statistical",
 

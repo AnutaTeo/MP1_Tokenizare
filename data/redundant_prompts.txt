@@ -79,7 +79,6 @@ Can you explain quicksort step by step in detail?
 Generate a SQL schema for an ecommerce platform please.
 Could you create a React login form component for me?
 Please help me fix this memory leak issue.
-Explain database normalization in a simple and understandable way.
 Can you compare HTTP and HTTPS and explain the differences?
 Please generate some example API responses.
 Create a Markdown table from this data please.
