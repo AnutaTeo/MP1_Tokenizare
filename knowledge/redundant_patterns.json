@@ -14868,5 +14868,2855 @@
         "token_cost": 4,
         "word_count": 4,
         "ngram_size": 4
+    },
+    "really need you to very": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "need you to very carefully": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "you to very carefully and": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "to very carefully and thoroughly": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "very carefully and thoroughly explain": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 10.0,
+        "normal_frequency": 0,
+        "redundant_frequency": 3,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "carefully and thoroughly explain recursion": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 6,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "explain recursion in python in": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 5.0,
+        "normal_frequency": 1,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "recursion in python in a": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 6,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "in python in a very": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "in a very simple and": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "a very simple and easy": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "very simple and easy to": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 10.0,
+        "normal_frequency": 0,
+        "redundant_frequency": 3,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "simple and easy to understand": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 8.856,
+        "normal_frequency": 1,
+        "redundant_frequency": 6,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "and easy to understand way": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 10.0,
+        "normal_frequency": 0,
+        "redundant_frequency": 3,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "a very detailed and comprehensive": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "would appreciate it if you": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "appreciate it if you could": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 12.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 5,
+        "token_cost": 7,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "can you please please explain": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "in a very detailed and": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 10.0,
+        "normal_frequency": 0,
+        "redundant_frequency": 3,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "i really need you to": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 11.61,
+        "normal_frequency": 0,
+        "redundant_frequency": 4,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "really need you to please": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 10.0,
+        "normal_frequency": 0,
+        "redundant_frequency": 3,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "need you to please explain": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "in a simple and easy": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 6.309,
+        "normal_frequency": 1,
+        "redundant_frequency": 3,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "a simple and easy to": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 6.309,
+        "normal_frequency": 1,
+        "redundant_frequency": 3,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "i would really appreciate it": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 10.0,
+        "normal_frequency": 0,
+        "redundant_frequency": 3,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "would really appreciate it if": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 10.0,
+        "normal_frequency": 0,
+        "redundant_frequency": 3,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "really appreciate it if you": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 10.0,
+        "normal_frequency": 0,
+        "redundant_frequency": 3,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "unit tests for this function": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 5.0,
+        "normal_frequency": 1,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "need you to please describe": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "you to please describe the": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 11.61,
+        "normal_frequency": 0,
+        "redundant_frequency": 4,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "write a cover letter for": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 5.0,
+        "normal_frequency": 1,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "a cover letter for a": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 5.0,
+        "normal_frequency": 1,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "cover letter for a software": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 5.0,
+        "normal_frequency": 1,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "in a very very simple": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "please please help me understand": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "please help me understand this": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 10.0,
+        "normal_frequency": 0,
+        "redundant_frequency": 3,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "help me understand this in": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 10.0,
+        "normal_frequency": 0,
+        "redundant_frequency": 3,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "me understand this in a": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 10.0,
+        "normal_frequency": 0,
+        "redundant_frequency": 3,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "this in a very simple": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "and easy to understand manner": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 5.0,
+        "normal_frequency": 1,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "easy to understand manner please": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "to understand manner please please": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "explain this in a very": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 10.0,
+        "normal_frequency": 0,
+        "redundant_frequency": 3,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "understand this in a simple": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 6,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "this in a simple and": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "you explain this in a": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "explanation that is very easy": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 6,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "that is very easy to": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "is very easy to understand": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "very easy to understand and": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "it would be great if": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 17.297,
+        "normal_frequency": 0,
+        "redundant_frequency": 10,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "would be great if you": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 17.297,
+        "normal_frequency": 0,
+        "redundant_frequency": 10,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "be great if you could": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 17.297,
+        "normal_frequency": 0,
+        "redundant_frequency": 10,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "great if you could please": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 17.297,
+        "normal_frequency": 0,
+        "redundant_frequency": 10,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "if you could please literally": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 17.297,
+        "normal_frequency": 0,
+        "redundant_frequency": 10,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "you could please literally describe": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "could please literally describe the": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "please literally describe the process": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "literally describe the process of": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 11.61,
+        "normal_frequency": 0,
+        "redundant_frequency": 4,
+        "token_cost": 6,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "basically please just summarize the": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 12.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 5,
+        "token_cost": 6,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "please just summarize the history": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 12.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 5,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "just summarize the history of": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 12.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 5,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "summarize the history of fitness": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 7,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "the history of fitness in": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "could you please just very": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 17.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 11,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "you please just very literally": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 17.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 11,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "please just very literally summarize": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "just very literally summarize the": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "very literally summarize the history": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 10.0,
+        "normal_frequency": 0,
+        "redundant_frequency": 3,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "literally summarize the history of": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 12.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 5,
+        "token_cost": 6,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "basically i was wondering if": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 16.61,
+        "normal_frequency": 0,
+        "redundant_frequency": 9,
+        "token_cost": 6,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "i was wondering if you": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 18.502,
+        "normal_frequency": 0,
+        "redundant_frequency": 12,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "was wondering if you could": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 19.037,
+        "normal_frequency": 0,
+        "redundant_frequency": 13,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "wondering if you could please": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 17.297,
+        "normal_frequency": 0,
+        "redundant_frequency": 10,
+        "token_cost": 7,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "provide a detailed analysis guide": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "a detailed analysis guide for": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "i m basically looking for": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 20.85,
+        "normal_frequency": 0,
+        "redundant_frequency": 17,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "m basically looking for you": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 20.437,
+        "normal_frequency": 0,
+        "redundant_frequency": 16,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "basically looking for you to": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 20.437,
+        "normal_frequency": 0,
+        "redundant_frequency": 16,
+        "token_cost": 6,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "looking for you to please": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 20.437,
+        "normal_frequency": 0,
+        "redundant_frequency": 16,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "for you to please compare": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "you to please compare two": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "to please compare two major": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "please compare two major theories": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "compare two major theories in": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 4.732,
+        "normal_frequency": 7,
+        "redundant_frequency": 7,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "in chronological order basically it": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "chronological order basically it would": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 6,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "order basically it would be": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "basically it would be helpful": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 15.85,
+        "normal_frequency": 0,
+        "redundant_frequency": 8,
+        "token_cost": 6,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "could you please just literally": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 17.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 11,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "describe the process of cooking": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 4.307,
+        "normal_frequency": 3,
+        "redundant_frequency": 3,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "the process of cooking in": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 4.307,
+        "normal_frequency": 3,
+        "redundant_frequency": 3,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "literally review the impact of": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 11.61,
+        "normal_frequency": 0,
+        "redundant_frequency": 4,
+        "token_cost": 6,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "on society using a chronological": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "society using a chronological order": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 6,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "i basically need you to": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 18.502,
+        "normal_frequency": 0,
+        "redundant_frequency": 12,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "basically need you to please": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 18.502,
+        "normal_frequency": 0,
+        "redundant_frequency": 12,
+        "token_cost": 6,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "you to please summarize the": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "to please summarize the history": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "please summarize the history of": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 10.0,
+        "normal_frequency": 0,
+        "redundant_frequency": 3,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "summarize the history of travel": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 4.307,
+        "normal_frequency": 3,
+        "redundant_frequency": 3,
+        "token_cost": 7,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "the history of travel in": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 4.307,
+        "normal_frequency": 3,
+        "redundant_frequency": 3,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "please i d like you": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 15.85,
+        "normal_frequency": 0,
+        "redundant_frequency": 8,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "i d like you to": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 15.85,
+        "normal_frequency": 0,
+        "redundant_frequency": 8,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "d like you to basically": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 15.85,
+        "normal_frequency": 0,
+        "redundant_frequency": 8,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "like you to basically describe": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "you to basically describe the": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "to basically describe the process": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "basically describe the process of": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 10.0,
+        "normal_frequency": 0,
+        "redundant_frequency": 3,
+        "token_cost": 6,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "hi there could you please": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 14.037,
+        "normal_frequency": 0,
+        "redundant_frequency": 6,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "there could you please very": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 14.037,
+        "normal_frequency": 0,
+        "redundant_frequency": 6,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "could you please very literally": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 14.037,
+        "normal_frequency": 0,
+        "redundant_frequency": 6,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "very literally analyze the current": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "literally analyze the current trends": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 10.0,
+        "normal_frequency": 0,
+        "redundant_frequency": 3,
+        "token_cost": 6,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "analyze the current trends in": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 4.801,
+        "normal_frequency": 9,
+        "redundant_frequency": 9,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "the current trends in economics": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "current trends in economics using": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "trends in economics using a": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 6,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "a detailed analysis literally please": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "for you to please provide": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 10.0,
+        "normal_frequency": 0,
+        "redundant_frequency": 3,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "you to please provide a": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 12.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 5,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "for you to please explain": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 10.0,
+        "normal_frequency": 0,
+        "redundant_frequency": 3,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "using a chronological order literally": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "if you don t mind": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 16.61,
+        "normal_frequency": 0,
+        "redundant_frequency": 9,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "you don t mind could": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 16.61,
+        "normal_frequency": 0,
+        "redundant_frequency": 9,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "don t mind could you": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 16.61,
+        "normal_frequency": 0,
+        "redundant_frequency": 9,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "t mind could you please": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 16.61,
+        "normal_frequency": 0,
+        "redundant_frequency": 9,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "mind could you please basically": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 16.61,
+        "normal_frequency": 0,
+        "redundant_frequency": 9,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "could you please basically summarize": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "you please basically summarize the": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "please basically summarize the history": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "basically summarize the history of": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 11.61,
+        "normal_frequency": 0,
+        "redundant_frequency": 4,
+        "token_cost": 6,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "if you could please list": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "you could please list the": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "could please list the essential": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "please list the essential principles": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 14.037,
+        "normal_frequency": 0,
+        "redundant_frequency": 6,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "list the essential principles of": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 4.825,
+        "normal_frequency": 10,
+        "redundant_frequency": 10,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "for you to please draft": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "you to please draft a": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 11.61,
+        "normal_frequency": 0,
+        "redundant_frequency": 4,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "to please draft a professional": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 10.0,
+        "normal_frequency": 0,
+        "redundant_frequency": 3,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "please draft a professional document": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 11.61,
+        "normal_frequency": 0,
+        "redundant_frequency": 4,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "draft a professional document for": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 4.801,
+        "normal_frequency": 9,
+        "redundant_frequency": 9,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "using a comparison basically it": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "a comparison basically it would": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "comparison basically it would be": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "literally draft a professional document": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 6,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "review the impact of biology": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 4.307,
+        "normal_frequency": 3,
+        "redundant_frequency": 3,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "the impact of biology on": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 4.307,
+        "normal_frequency": 3,
+        "redundant_frequency": 3,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "impact of biology on society": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 4.307,
+        "normal_frequency": 3,
+        "redundant_frequency": 3,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "of biology on society using": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 4.307,
+        "normal_frequency": 3,
+        "redundant_frequency": 3,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "biology on society using a": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 4.307,
+        "normal_frequency": 3,
+        "redundant_frequency": 3,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "you could please literally summarize": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "could please literally summarize the": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "please literally summarize the history": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "need you to please list": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "you to please list the": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 11.61,
+        "normal_frequency": 0,
+        "redundant_frequency": 4,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "to please list the essential": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 11.61,
+        "normal_frequency": 0,
+        "redundant_frequency": 4,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "in a pros and cons": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 4.307,
+        "normal_frequency": 3,
+        "redundant_frequency": 3,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "a pros and cons please": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 12.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 5,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "the essential principles of fitness": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "essential principles of fitness in": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "principles of fitness in a": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 7,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "the current trends in astronomy": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "current trends in astronomy using": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "trends in astronomy using a": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 6,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "literally compare two major theories": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 6,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "two major theories in fitness": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "major theories in fitness with": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "theories in fitness with a": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 6,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "in fitness with a pros": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "fitness with a pros and": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "with a pros and cons": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 4.307,
+        "normal_frequency": 3,
+        "redundant_frequency": 3,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "need you to please draft": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "a professional document for cooking": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "professional document for cooking with": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "document for cooking with a": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "like you to basically draft": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "you to basically draft a": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "to basically draft a professional": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "basically draft a professional document": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 6,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "with a step by step": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "a step by step literally": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "step by step literally basically": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "you please just literally create": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 10.0,
+        "normal_frequency": 0,
+        "redundant_frequency": 3,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "please just literally create a": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 10.0,
+        "normal_frequency": 0,
+        "redundant_frequency": 3,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "create a step by step": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "a step by step for": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "step by step for a": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "by step for a project": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "step for a project in": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "basically please just compare two": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 6,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "please just compare two major": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "just compare two major theories": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "for you to please describe": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "to please describe the process": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 10.0,
+        "normal_frequency": 0,
+        "redundant_frequency": 3,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "please describe the process of": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 11.61,
+        "normal_frequency": 0,
+        "redundant_frequency": 4,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "pros and cons please and": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 6,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "and cons please and thank": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "cons please and thank you": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "for you to please list": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "in a summary please and": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "a summary please and thank": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "summary please and thank you": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "need you to please analyze": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 10.0,
+        "normal_frequency": 0,
+        "redundant_frequency": 3,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "you to please analyze the": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 10.0,
+        "normal_frequency": 0,
+        "redundant_frequency": 3,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "to please analyze the current": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 10.0,
+        "normal_frequency": 0,
+        "redundant_frequency": 3,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "please analyze the current trends": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 11.61,
+        "normal_frequency": 0,
+        "redundant_frequency": 4,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "the current trends in gardening": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "current trends in gardening using": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "trends in gardening using a": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 6,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "a table format literally please": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "summarize the history of interior": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 4.491,
+        "normal_frequency": 4,
+        "redundant_frequency": 4,
+        "token_cost": 7,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "the history of interior design": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 4.491,
+        "normal_frequency": 4,
+        "redundant_frequency": 4,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "history of interior design in": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 4.491,
+        "normal_frequency": 4,
+        "redundant_frequency": 4,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "the essential principles of archeology": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 7,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "essential principles of archeology in": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 7,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "principles of archeology in a": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 9,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "of archeology in a pros": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 7,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "archeology in a pros and": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 7,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "please just very literally create": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "just very literally create a": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "for a project in archeology": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 7,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "a project in archeology basically": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 7,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "provide a table format guide": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 4.307,
+        "normal_frequency": 3,
+        "redundant_frequency": 3,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "a table format guide for": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 4.307,
+        "normal_frequency": 3,
+        "redundant_frequency": 3,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "you please very literally explain": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "you please just literally review": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 10.0,
+        "normal_frequency": 0,
+        "redundant_frequency": 3,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "please just literally review the": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 10.0,
+        "normal_frequency": 0,
+        "redundant_frequency": 3,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "just literally review the impact": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "on society using a detailed": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "society using a detailed analysis": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 6,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "using a detailed analysis basically": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "on society using a outline": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "society using a outline please": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 6,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "of interior design in summary": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "summary just for me please": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "you please just literally list": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "please just literally list the": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "just literally list the essential": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "literally list the essential principles": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 10.0,
+        "normal_frequency": 0,
+        "redundant_frequency": 3,
+        "token_cost": 6,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "using a easy to understand": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 4.491,
+        "normal_frequency": 4,
+        "redundant_frequency": 4,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "like you to basically summarize": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "you to basically summarize the": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "to basically summarize the history": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "summarize the history of cooking": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 7,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "the history of cooking in": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "you to please review the": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "to please review the impact": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "please review the impact of": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 11.61,
+        "normal_frequency": 0,
+        "redundant_frequency": 4,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "on society using a summary": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "outline please and thank you": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "history of travel in detailed": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "of travel in detailed analysis": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 4.307,
+        "normal_frequency": 3,
+        "redundant_frequency": 3,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "travel in detailed analysis literally": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "provide a outline guide for": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "to please provide a chronological": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "please provide a chronological order": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "provide a chronological order guide": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "a chronological order guide for": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "review the impact of law": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "the impact of law on": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "impact of law on society": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "of law on society using": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "law on society using a": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "basically provide a table format": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 6,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "need you to please provide": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "literally explain philosophy using a": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 6,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "a easy to understand please": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 10.0,
+        "normal_frequency": 0,
+        "redundant_frequency": 3,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "you could please literally explain": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "with a table format literally": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "if you could please review": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "you could please review the": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "could please review the impact": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "basically please just analyze the": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 6,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "please just analyze the current": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "just analyze the current trends": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "using a pros and cons": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 3.962,
+        "normal_frequency": 2,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "you to please explain sociology": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "to please explain sociology using": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "please explain sociology using a": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "explain to me how it": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "in this code that i": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "wondering if you could help": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 7,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "if you could help me": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
+    },
+    "you tell me what the": {
+        "type": "redundant_phrase",
+        "source": "statistical",
+        "redundancy_score": 7.925,
+        "normal_frequency": 0,
+        "redundant_frequency": 2,
+        "token_cost": 5,
+        "word_count": 5,
+        "ngram_size": 5
     }
 }

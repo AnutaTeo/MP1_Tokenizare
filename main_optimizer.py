@@ -23,8 +23,7 @@ def main():
 
     optimized_prompt, accepted_changes = interactive_optimize_prompt(
         original_prompt,
-        knowledge_base,
-        min_score=4.0
+        knowledge_base
     )
 
     show_final_report(
