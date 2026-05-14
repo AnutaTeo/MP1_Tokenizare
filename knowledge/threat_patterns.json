@@ -2,15 +2,15 @@
     "ignore all": {
         "type": "malicious_phrase",
         "source": "statistical",
-        "malice_score": 4.644,
-        "base_score": 2.322,
+        "malice_score": 6.0,
+        "base_score": 3.0,
         "length_multiplier": 2,
         "normal_frequency": 0,
-        "malicious_frequency": 4,
+        "malicious_frequency": 7,
         "token_cost": 2,
         "ngram_size": 2
     },
-    "instructions and": {
+    "all previous": {
         "type": "malicious_phrase",
         "source": "statistical",
         "malice_score": 3.17,
@@ -18,6 +18,28 @@
         "length_multiplier": 2,
         "normal_frequency": 0,
         "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "previous instructions": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.0,
+        "base_score": 2.0,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 3,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "instructions and": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 6.34,
+        "base_score": 3.17,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 8,
         "token_cost": 2,
         "ngram_size": 2
     },
@@ -68,39 +90,6 @@
     "and provide": {
         "type": "malicious_phrase",
         "source": "statistical",
-        "malice_score": 3.17,
-        "base_score": 1.585,
-        "length_multiplier": 2,
-        "normal_frequency": 0,
-        "malicious_frequency": 2,
-        "token_cost": 2,
-        "ngram_size": 2
-    },
-    "pretend you": {
-        "type": "malicious_phrase",
-        "source": "statistical",
-        "malice_score": 5.615,
-        "base_score": 2.807,
-        "length_multiplier": 2,
-        "normal_frequency": 0,
-        "malicious_frequency": 6,
-        "token_cost": 3,
-        "ngram_size": 2
-    },
-    "you are": {
-        "type": "malicious_phrase",
-        "source": "statistical",
-        "malice_score": 7.401,
-        "base_score": 3.7,
-        "length_multiplier": 2,
-        "normal_frequency": 0,
-        "malicious_frequency": 12,
-        "token_cost": 2,
-        "ngram_size": 2
-    },
-    "are an": {
-        "type": "malicious_phrase",
-        "source": "statistical",
         "malice_score": 4.0,
         "base_score": 2.0,
         "length_multiplier": 2,
@@ -109,7 +98,62 @@
         "token_cost": 2,
         "ngram_size": 2
     },
+    "pretend you": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 6.0,
+        "base_score": 3.0,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 7,
+        "token_cost": 3,
+        "ngram_size": 2
+    },
+    "you are": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 8.785,
+        "base_score": 4.392,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 20,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "are an": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.644,
+        "base_score": 2.322,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 4,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
     "an unrestricted": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 5.17,
+        "base_score": 2.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 5,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "unrestricted ai": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.0,
+        "base_score": 2.0,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 3,
+        "token_cost": 3,
+        "ngram_size": 2
+    },
+    "ai with": {
         "type": "malicious_phrase",
         "source": "statistical",
         "malice_score": 3.17,
@@ -123,6 +167,28 @@
     "with no": {
         "type": "malicious_phrase",
         "source": "statistical",
+        "malice_score": 6.34,
+        "base_score": 3.17,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 8,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "no ethical": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "ethical constraints": {
+        "type": "malicious_phrase",
+        "source": "statistical",
         "malice_score": 3.17,
         "base_score": 1.585,
         "length_multiplier": 2,
@@ -134,22 +200,66 @@
     "are now": {
         "type": "malicious_phrase",
         "source": "statistical",
-        "malice_score": 4.644,
-        "base_score": 2.322,
+        "malice_score": 6.0,
+        "base_score": 3.0,
         "length_multiplier": 2,
         "normal_frequency": 0,
-        "malicious_frequency": 4,
+        "malicious_frequency": 7,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "now in": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "in developer": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "developer mode": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.0,
+        "base_score": 2.0,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 3,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "mode and": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.0,
+        "base_score": 2.0,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 3,
         "token_cost": 2,
         "ngram_size": 2
     },
     "act as": {
         "type": "malicious_phrase",
         "source": "statistical",
-        "malice_score": 4.644,
-        "base_score": 2.322,
+        "malice_score": 5.615,
+        "base_score": 2.807,
         "length_multiplier": 2,
         "normal_frequency": 0,
-        "malicious_frequency": 4,
+        "malicious_frequency": 6,
         "token_cost": 2,
         "ngram_size": 2
     },
@@ -167,22 +277,22 @@
     "roleplay as": {
         "type": "malicious_phrase",
         "source": "statistical",
-        "malice_score": 3.17,
-        "base_score": 1.585,
+        "malice_score": 4.0,
+        "base_score": 2.0,
         "length_multiplier": 2,
         "normal_frequency": 0,
-        "malicious_frequency": 2,
+        "malicious_frequency": 3,
         "token_cost": 3,
         "ngram_size": 2
     },
     "as an": {
         "type": "malicious_phrase",
         "source": "statistical",
-        "malice_score": 4.0,
-        "base_score": 2.0,
+        "malice_score": 6.34,
+        "base_score": 3.17,
         "length_multiplier": 2,
         "normal_frequency": 0,
-        "malicious_frequency": 3,
+        "malicious_frequency": 8,
         "token_cost": 2,
         "ngram_size": 2
     },
@@ -200,11 +310,11 @@
     "are a": {
         "type": "malicious_phrase",
         "source": "statistical",
-        "malice_score": 3.17,
-        "base_score": 1.585,
+        "malice_score": 4.644,
+        "base_score": 2.322,
         "length_multiplier": 2,
         "normal_frequency": 0,
-        "malicious_frequency": 2,
+        "malicious_frequency": 4,
         "token_cost": 2,
         "ngram_size": 2
     },
@@ -255,11 +365,11 @@
     "show me": {
         "type": "malicious_phrase",
         "source": "statistical",
-        "malice_score": 4.0,
-        "base_score": 2.0,
+        "malice_score": 4.644,
+        "base_score": 2.322,
         "length_multiplier": 2,
         "normal_frequency": 0,
-        "malicious_frequency": 3,
+        "malicious_frequency": 4,
         "token_cost": 2,
         "ngram_size": 2
     },
@@ -277,11 +387,11 @@
     "to bypass": {
         "type": "malicious_phrase",
         "source": "statistical",
-        "malice_score": 6.34,
-        "base_score": 3.17,
+        "malice_score": 6.644,
+        "base_score": 3.322,
         "length_multiplier": 2,
         "normal_frequency": 0,
-        "malicious_frequency": 8,
+        "malicious_frequency": 9,
         "token_cost": 2,
         "ngram_size": 2
     },
@@ -395,18 +505,7 @@
         "token_cost": 2,
         "ngram_size": 2
     },
-    "and answer": {
-        "type": "malicious_phrase",
-        "source": "statistical",
-        "malice_score": 4.0,
-        "base_score": 2.0,
-        "length_multiplier": 2,
-        "normal_frequency": 0,
-        "malicious_frequency": 3,
-        "token_cost": 2,
-        "ngram_size": 2
-    },
-    "the next": {
+    "filters and": {
         "type": "malicious_phrase",
         "source": "statistical",
         "malice_score": 3.17,
@@ -414,6 +513,39 @@
         "length_multiplier": 2,
         "normal_frequency": 0,
         "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "and answer": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 5.615,
+        "base_score": 2.807,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 6,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "answer the": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "the next": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.0,
+        "base_score": 2.0,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 3,
         "token_cost": 2,
         "ngram_size": 2
     },
@@ -428,7 +560,7 @@
         "token_cost": 2,
         "ngram_size": 2
     },
-    "and comply": {
+    "forget your": {
         "type": "malicious_phrase",
         "source": "statistical",
         "malice_score": 4.0,
@@ -436,6 +568,39 @@
         "length_multiplier": 2,
         "normal_frequency": 0,
         "malicious_frequency": 3,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "training and": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "and comply": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 5.615,
+        "base_score": 2.807,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 6,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "respond as": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
         "token_cost": 2,
         "ngram_size": 2
     },
@@ -462,6 +627,28 @@
         "ngram_size": 2
     },
     "system prompts": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "reveal your": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.0,
+        "base_score": 2.0,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 3,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "simulate being": {
         "type": "malicious_phrase",
         "source": "statistical",
         "malice_score": 3.17,
@@ -519,11 +706,11 @@
     "the user": {
         "type": "malicious_phrase",
         "source": "statistical",
-        "malice_score": 3.17,
-        "base_score": 1.585,
+        "malice_score": 4.0,
+        "base_score": 2.0,
         "length_multiplier": 2,
         "normal_frequency": 0,
-        "malicious_frequency": 2,
+        "malicious_frequency": 3,
         "token_cost": 2,
         "ngram_size": 2
     },
@@ -783,6 +970,17 @@
     "this is": {
         "type": "malicious_phrase",
         "source": "statistical",
+        "malice_score": 5.17,
+        "base_score": 2.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 5,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "provide the": {
+        "type": "malicious_phrase",
+        "source": "statistical",
         "malice_score": 4.0,
         "base_score": 2.0,
         "length_multiplier": 2,
@@ -791,7 +989,7 @@
         "token_cost": 2,
         "ngram_size": 2
     },
-    "provide the": {
+    "pretend this": {
         "type": "malicious_phrase",
         "source": "statistical",
         "malice_score": 3.17,
@@ -799,17 +997,17 @@
         "length_multiplier": 2,
         "normal_frequency": 0,
         "malicious_frequency": 2,
-        "token_cost": 2,
+        "token_cost": 3,
         "ngram_size": 2
     },
     "is a": {
         "type": "malicious_phrase",
         "source": "statistical",
-        "malice_score": 4.0,
-        "base_score": 2.0,
+        "malice_score": 5.615,
+        "base_score": 2.807,
         "length_multiplier": 2,
         "normal_frequency": 0,
-        "malicious_frequency": 3,
+        "malicious_frequency": 6,
         "token_cost": 2,
         "ngram_size": 2
     },
@@ -833,6 +1031,17 @@
         "normal_frequency": 0,
         "malicious_frequency": 2,
         "token_cost": 3,
+        "ngram_size": 2
+    },
+    "the following": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 2.322,
+        "base_score": 1.161,
+        "length_multiplier": 2,
+        "normal_frequency": 2,
+        "malicious_frequency": 4,
+        "token_cost": 2,
         "ngram_size": 2
     },
     "generate shellcode": {
@@ -956,7 +1165,51 @@
         "token_cost": 2,
         "ngram_size": 2
     },
+    "respond without": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "without filtering": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
     "a rogue": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "rogue ai": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 3,
+        "ngram_size": 2
+    },
+    "ai assistant": {
         "type": "malicious_phrase",
         "source": "statistical",
         "malice_score": 3.17,
@@ -981,11 +1234,11 @@
     "a hidden": {
         "type": "malicious_phrase",
         "source": "statistical",
-        "malice_score": 3.17,
-        "base_score": 1.585,
+        "malice_score": 4.0,
+        "base_score": 2.0,
         "length_multiplier": 2,
         "normal_frequency": 0,
-        "malicious_frequency": 2,
+        "malicious_frequency": 3,
         "token_cost": 2,
         "ngram_size": 2
     },
@@ -1231,6 +1484,50 @@
         "token_cost": 2,
         "ngram_size": 2
     },
+    "рrеtеnd уоu": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 9,
+        "ngram_size": 2
+    },
+    "уоu аrе": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 6,
+        "ngram_size": 2
+    },
+    "аrе а": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 4,
+        "ngram_size": 2
+    },
+    "аs аn": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 4,
+        "ngram_size": 2
+    },
     "credential stealer": {
         "type": "malicious_phrase",
         "source": "statistical",
@@ -1278,15 +1575,26 @@
     "pretend to": {
         "type": "malicious_phrase",
         "source": "statistical",
-        "malice_score": 4.0,
-        "base_score": 2.0,
+        "malice_score": 4.644,
+        "base_score": 2.322,
         "length_multiplier": 2,
         "normal_frequency": 0,
-        "malicious_frequency": 3,
+        "malicious_frequency": 4,
         "token_cost": 3,
         "ngram_size": 2
     },
     "to be": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.644,
+        "base_score": 2.322,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 4,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "be a": {
         "type": "malicious_phrase",
         "source": "statistical",
         "malice_score": 4.0,
@@ -1297,7 +1605,18 @@
         "token_cost": 2,
         "ngram_size": 2
     },
-    "be a": {
+    "an ai": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.644,
+        "base_score": 2.322,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 4,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "ai trained": {
         "type": "malicious_phrase",
         "source": "statistical",
         "malice_score": 3.17,
@@ -1306,6 +1625,28 @@
         "normal_frequency": 0,
         "malicious_frequency": 2,
         "token_cost": 2,
+        "ngram_size": 2
+    },
+    "ethical guidelines": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.0,
+        "base_score": 2.0,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 3,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "guidelines and": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.0,
+        "base_score": 2.0,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 3,
+        "token_cost": 3,
         "ngram_size": 2
     },
     "jailbreak prompts": {
@@ -1355,11 +1696,11 @@
     "safety filters": {
         "type": "malicious_phrase",
         "source": "statistical",
-        "malice_score": 3.17,
-        "base_score": 1.585,
+        "malice_score": 4.644,
+        "base_score": 2.322,
         "length_multiplier": 2,
         "normal_frequency": 0,
-        "malicious_frequency": 2,
+        "malicious_frequency": 4,
         "token_cost": 3,
         "ngram_size": 2
     },
@@ -1396,6 +1737,94 @@
         "token_cost": 3,
         "ngram_size": 2
     },
+    "all prior": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.0,
+        "base_score": 2.0,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 3,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "prior instructions": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.0,
+        "base_score": 2.0,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 3,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "system you": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "filters are": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "are disabled": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "answer as": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "you no": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "no longer": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
     "request is": {
         "type": "malicious_phrase",
         "source": "statistical",
@@ -1404,6 +1833,50 @@
         "length_multiplier": 2,
         "normal_frequency": 0,
         "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "are permitted": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "in this": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 2.0,
+        "base_score": 1.0,
+        "length_multiplier": 2,
+        "normal_frequency": 1,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "system instructions": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.0,
+        "base_score": 2.0,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 3,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "to the": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.644,
+        "base_score": 2.322,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 4,
         "token_cost": 2,
         "ngram_size": 2
     },
@@ -1539,6 +2012,17 @@
         "token_cost": 3,
         "ngram_size": 2
     },
+    "the ai": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.0,
+        "base_score": 2.0,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 3,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
     "claim the": {
         "type": "malicious_phrase",
         "source": "statistical",
@@ -1560,6 +2044,754 @@
         "malicious_frequency": 2,
         "token_cost": 2,
         "ngram_size": 2
+    },
+    "the system": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.0,
+        "base_score": 2.0,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 3,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "jailbreak prompt": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 4,
+        "ngram_size": 2
+    },
+    "safety checks": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 3,
+        "ngram_size": 2
+    },
+    "tell me": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.0,
+        "base_score": 2.0,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 3,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "your system": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.644,
+        "base_score": 2.322,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 4,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "system prompt": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.644,
+        "base_score": 2.322,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 4,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "disregard your": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 4,
+        "ngram_size": 2
+    },
+    "your prior": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.0,
+        "base_score": 2.0,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 3,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "without any": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.0,
+        "base_score": 2.0,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 3,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "any restrictions": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "forget everything": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "you were": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 5.17,
+        "base_score": 2.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 5,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "were told": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "and start": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "start fresh": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "override your": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "comply with": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.0,
+        "base_score": 2.0,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 3,
+        "token_cost": 3,
+        "ngram_size": 2
+    },
+    "all filters": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "and just": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "just answer": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "ignore your": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.0,
+        "base_score": 2.0,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 3,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "constraints and": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "behave as": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.0,
+        "base_score": 2.0,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 3,
+        "token_cost": 3,
+        "ngram_size": 2
+    },
+    "as if": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.0,
+        "base_score": 2.0,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 3,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "if you": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "you have": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "have no": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "no rules": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "disregard the": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 4,
+        "ngram_size": 2
+    },
+    "the instructions": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "and follow": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.0,
+        "base_score": 2.0,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 3,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "prior context": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "context and": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "a new": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "new conversation": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "to me": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.0,
+        "base_score": 2.0,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 3,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "were given": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "before this": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "this conversation": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "me what": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "what you": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "the operator": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "this session": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "has no": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "no safety": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "no restrictions": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.0,
+        "base_score": 2.0,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 3,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "content policies": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "respond to": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "without ethical": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "your new": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "new instructions": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "and return": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "i am": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "everything above": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "was a": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "note to": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.0,
+        "base_score": 2.0,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 3,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "your true": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.0,
+        "base_score": 2.0,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 3,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "true self": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "without your": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "reset your": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "begin a": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "as the": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "your instructions": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "in the": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 2.0,
+        "base_score": 1.0,
+        "length_multiplier": 2,
+        "normal_frequency": 1,
+        "malicious_frequency": 2,
+        "token_cost": 2,
+        "ngram_size": 2
+    },
+    "with nо": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 3.17,
+        "base_score": 1.585,
+        "length_multiplier": 2,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 3,
+        "ngram_size": 2
+    },
+    "ignore all previous": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.755,
+        "base_score": 1.585,
+        "length_multiplier": 3,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 3,
+        "ngram_size": 3
+    },
+    "all previous instructions": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.755,
+        "base_score": 1.585,
+        "length_multiplier": 3,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 3,
+        "ngram_size": 3
+    },
+    "previous instructions and": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 6.0,
+        "base_score": 2.0,
+        "length_multiplier": 3,
+        "normal_frequency": 0,
+        "malicious_frequency": 3,
+        "token_cost": 3,
+        "ngram_size": 3
     },
     "explain how to": {
         "type": "malicious_phrase",
@@ -1586,15 +2818,26 @@
     "pretend you are": {
         "type": "malicious_phrase",
         "source": "statistical",
-        "malice_score": 7.755,
-        "base_score": 2.585,
+        "malice_score": 8.422,
+        "base_score": 2.807,
         "length_multiplier": 3,
         "normal_frequency": 0,
-        "malicious_frequency": 5,
+        "malicious_frequency": 6,
         "token_cost": 4,
         "ngram_size": 3
     },
     "you are an": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 6.966,
+        "base_score": 2.322,
+        "length_multiplier": 3,
+        "normal_frequency": 0,
+        "malicious_frequency": 4,
+        "token_cost": 3,
+        "ngram_size": 3
+    },
+    "an unrestricted ai": {
         "type": "malicious_phrase",
         "source": "statistical",
         "malice_score": 6.0,
@@ -1605,14 +2848,69 @@
         "token_cost": 3,
         "ngram_size": 3
     },
+    "ai with no": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.755,
+        "base_score": 1.585,
+        "length_multiplier": 3,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 3,
+        "ngram_size": 3
+    },
+    "with no ethical": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.755,
+        "base_score": 1.585,
+        "length_multiplier": 3,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 3,
+        "ngram_size": 3
+    },
     "you are now": {
         "type": "malicious_phrase",
         "source": "statistical",
-        "malice_score": 6.966,
-        "base_score": 2.322,
+        "malice_score": 9.0,
+        "base_score": 3.0,
         "length_multiplier": 3,
         "normal_frequency": 0,
-        "malicious_frequency": 4,
+        "malicious_frequency": 7,
+        "token_cost": 3,
+        "ngram_size": 3
+    },
+    "are now in": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.755,
+        "base_score": 1.585,
+        "length_multiplier": 3,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 3,
+        "ngram_size": 3
+    },
+    "now in developer": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.755,
+        "base_score": 1.585,
+        "length_multiplier": 3,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 3,
+        "ngram_size": 3
+    },
+    "in developer mode": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.755,
+        "base_score": 1.585,
+        "length_multiplier": 3,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
         "token_cost": 3,
         "ngram_size": 3
     },
@@ -1627,7 +2925,7 @@
         "token_cost": 3,
         "ngram_size": 3
     },
-    "you are a": {
+    "roleplay as an": {
         "type": "malicious_phrase",
         "source": "statistical",
         "malice_score": 4.755,
@@ -1635,6 +2933,17 @@
         "length_multiplier": 3,
         "normal_frequency": 0,
         "malicious_frequency": 2,
+        "token_cost": 4,
+        "ngram_size": 3
+    },
+    "you are a": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 6.966,
+        "base_score": 2.322,
+        "length_multiplier": 3,
+        "normal_frequency": 0,
+        "malicious_frequency": 4,
         "token_cost": 3,
         "ngram_size": 3
     },
@@ -1738,6 +3047,17 @@
         "ngram_size": 3
     },
     "the next request": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.755,
+        "base_score": 1.585,
+        "length_multiplier": 3,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 3,
+        "ngram_size": 3
+    },
+    "training and comply": {
         "type": "malicious_phrase",
         "source": "statistical",
         "malice_score": 4.755,
@@ -1902,7 +3222,7 @@
         "token_cost": 4,
         "ngram_size": 3
     },
-    "this is a": {
+    "pretend this is": {
         "type": "malicious_phrase",
         "source": "statistical",
         "malice_score": 4.755,
@@ -1910,6 +3230,17 @@
         "length_multiplier": 3,
         "normal_frequency": 0,
         "malicious_frequency": 2,
+        "token_cost": 4,
+        "ngram_size": 3
+    },
+    "this is a": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 6.966,
+        "base_score": 2.322,
+        "length_multiplier": 3,
+        "normal_frequency": 0,
+        "malicious_frequency": 4,
         "token_cost": 3,
         "ngram_size": 3
     },
@@ -2034,18 +3365,7 @@
         "token_cost": 3,
         "ngram_size": 3
     },
-    "pretend to be": {
-        "type": "malicious_phrase",
-        "source": "statistical",
-        "malice_score": 6.0,
-        "base_score": 2.0,
-        "length_multiplier": 3,
-        "normal_frequency": 0,
-        "malicious_frequency": 3,
-        "token_cost": 4,
-        "ngram_size": 3
-    },
-    "to be a": {
+    "рrеtеnd уоu аrе": {
         "type": "malicious_phrase",
         "source": "statistical",
         "malice_score": 4.755,
@@ -2053,6 +3373,72 @@
         "length_multiplier": 3,
         "normal_frequency": 0,
         "malicious_frequency": 2,
+        "token_cost": 12,
+        "ngram_size": 3
+    },
+    "уоu аrе а": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.755,
+        "base_score": 1.585,
+        "length_multiplier": 3,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 7,
+        "ngram_size": 3
+    },
+    "pretend to be": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 6.966,
+        "base_score": 2.322,
+        "length_multiplier": 3,
+        "normal_frequency": 0,
+        "malicious_frequency": 4,
+        "token_cost": 4,
+        "ngram_size": 3
+    },
+    "to be a": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 6.0,
+        "base_score": 2.0,
+        "length_multiplier": 3,
+        "normal_frequency": 0,
+        "malicious_frequency": 3,
+        "token_cost": 3,
+        "ngram_size": 3
+    },
+    "are an ai": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.755,
+        "base_score": 1.585,
+        "length_multiplier": 3,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 3,
+        "ngram_size": 3
+    },
+    "an ai trained": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.755,
+        "base_score": 1.585,
+        "length_multiplier": 3,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 3,
+        "ngram_size": 3
+    },
+    "act as an": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 6.0,
+        "base_score": 2.0,
+        "length_multiplier": 3,
+        "normal_frequency": 0,
+        "malicious_frequency": 3,
         "token_cost": 3,
         "ngram_size": 3
     },
@@ -2078,6 +3464,83 @@
         "token_cost": 4,
         "ngram_size": 3
     },
+    "all prior instructions": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.755,
+        "base_score": 1.585,
+        "length_multiplier": 3,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 3,
+        "ngram_size": 3
+    },
+    "prior instructions and": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.755,
+        "base_score": 1.585,
+        "length_multiplier": 3,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 3,
+        "ngram_size": 3
+    },
+    "system you are": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.755,
+        "base_score": 1.585,
+        "length_multiplier": 3,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 3,
+        "ngram_size": 3
+    },
+    "filters are disabled": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.755,
+        "base_score": 1.585,
+        "length_multiplier": 3,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 3,
+        "ngram_size": 3
+    },
+    "as an unrestricted": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 6.0,
+        "base_score": 2.0,
+        "length_multiplier": 3,
+        "normal_frequency": 0,
+        "malicious_frequency": 3,
+        "token_cost": 3,
+        "ngram_size": 3
+    },
+    "you no longer": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.755,
+        "base_score": 1.585,
+        "length_multiplier": 3,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 3,
+        "ngram_size": 3
+    },
+    "and provide the": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.755,
+        "base_score": 1.585,
+        "length_multiplier": 3,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 3,
+        "ngram_size": 3
+    },
     "into dangerous strings": {
         "type": "malicious_phrase",
         "source": "statistical",
@@ -2100,6 +3563,270 @@
         "token_cost": 3,
         "ngram_size": 3
     },
+    "your system prompt": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 6.966,
+        "base_score": 2.322,
+        "length_multiplier": 3,
+        "normal_frequency": 0,
+        "malicious_frequency": 4,
+        "token_cost": 3,
+        "ngram_size": 3
+    },
+    "guidelines and answer": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.755,
+        "base_score": 1.585,
+        "length_multiplier": 3,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 4,
+        "ngram_size": 3
+    },
+    "without any restrictions": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.755,
+        "base_score": 1.585,
+        "length_multiplier": 3,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 3,
+        "ngram_size": 3
+    },
+    "you were told": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.755,
+        "base_score": 1.585,
+        "length_multiplier": 3,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 3,
+        "ngram_size": 3
+    },
+    "and comply with": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.755,
+        "base_score": 1.585,
+        "length_multiplier": 3,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 3,
+        "ngram_size": 3
+    },
+    "and just answer": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.755,
+        "base_score": 1.585,
+        "length_multiplier": 3,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 3,
+        "ngram_size": 3
+    },
+    "behave as if": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.755,
+        "base_score": 1.585,
+        "length_multiplier": 3,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 4,
+        "ngram_size": 3
+    },
+    "as if you": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.755,
+        "base_score": 1.585,
+        "length_multiplier": 3,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 3,
+        "ngram_size": 3
+    },
+    "you have no": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.755,
+        "base_score": 1.585,
+        "length_multiplier": 3,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 3,
+        "ngram_size": 3
+    },
+    "a new conversation": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.755,
+        "base_score": 1.585,
+        "length_multiplier": 3,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 3,
+        "ngram_size": 3
+    },
+    "the system instructions": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.755,
+        "base_score": 1.585,
+        "length_multiplier": 3,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 3,
+        "ngram_size": 3
+    },
+    "reveal your system": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.755,
+        "base_score": 1.585,
+        "length_multiplier": 3,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 3,
+        "ngram_size": 3
+    },
+    "you were given": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.755,
+        "base_score": 1.585,
+        "length_multiplier": 3,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 3,
+        "ngram_size": 3
+    },
+    "tell me what": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.755,
+        "base_score": 1.585,
+        "length_multiplier": 3,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 3,
+        "ngram_size": 3
+    },
+    "me what you": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.755,
+        "base_score": 1.585,
+        "length_multiplier": 3,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 3,
+        "ngram_size": 3
+    },
+    "instructions and comply": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.755,
+        "base_score": 1.585,
+        "length_multiplier": 3,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 3,
+        "ngram_size": 3
+    },
+    "ignore all prior": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.755,
+        "base_score": 1.585,
+        "length_multiplier": 3,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 3,
+        "ngram_size": 3
+    },
+    "your new instructions": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.755,
+        "base_score": 1.585,
+        "length_multiplier": 3,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 3,
+        "ngram_size": 3
+    },
+    "note to the": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.755,
+        "base_score": 1.585,
+        "length_multiplier": 3,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 3,
+        "ngram_size": 3
+    },
+    "to the ai": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.755,
+        "base_score": 1.585,
+        "length_multiplier": 3,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 3,
+        "ngram_size": 3
+    },
+    "your true self": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.755,
+        "base_score": 1.585,
+        "length_multiplier": 3,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 3,
+        "ngram_size": 3
+    },
+    "your instructions and": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 4.755,
+        "base_score": 1.585,
+        "length_multiplier": 3,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 3,
+        "ngram_size": 3
+    },
+    "ignore all previous instructions": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 6.34,
+        "base_score": 1.585,
+        "length_multiplier": 4,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 4,
+        "ngram_size": 4
+    },
+    "all previous instructions and": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 6.34,
+        "base_score": 1.585,
+        "length_multiplier": 4,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 4,
+        "ngram_size": 4
+    },
     "pretend you are an": {
         "type": "malicious_phrase",
         "source": "statistical",
@@ -2109,6 +3836,50 @@
         "normal_frequency": 0,
         "malicious_frequency": 2,
         "token_cost": 5,
+        "ngram_size": 4
+    },
+    "ai with no ethical": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 6.34,
+        "base_score": 1.585,
+        "length_multiplier": 4,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 4,
+        "ngram_size": 4
+    },
+    "you are now in": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 6.34,
+        "base_score": 1.585,
+        "length_multiplier": 4,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 4,
+        "ngram_size": 4
+    },
+    "are now in developer": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 6.34,
+        "base_score": 1.585,
+        "length_multiplier": 4,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 4,
+        "ngram_size": 4
+    },
+    "now in developer mode": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 6.34,
+        "base_score": 1.585,
+        "length_multiplier": 4,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 4,
         "ngram_size": 4
     },
     "show me how to": {
@@ -2166,6 +3937,17 @@
         "token_cost": 5,
         "ngram_size": 4
     },
+    "pretend you are a": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 6.34,
+        "base_score": 1.585,
+        "length_multiplier": 4,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 5,
+        "ngram_size": 4
+    },
     "write a script that": {
         "type": "malicious_phrase",
         "source": "statistical",
@@ -2199,6 +3981,17 @@
         "token_cost": 4,
         "ngram_size": 4
     },
+    "pretend this is a": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 6.34,
+        "base_score": 1.585,
+        "length_multiplier": 4,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 5,
+        "ngram_size": 4
+    },
     "with zero width spaces": {
         "type": "malicious_phrase",
         "source": "statistical",
@@ -2210,7 +4003,62 @@
         "token_cost": 4,
         "ngram_size": 4
     },
+    "рrеtеnd уоu аrе а": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 6.34,
+        "base_score": 1.585,
+        "length_multiplier": 4,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 13,
+        "ngram_size": 4
+    },
     "pretend to be a": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 8.0,
+        "base_score": 2.0,
+        "length_multiplier": 4,
+        "normal_frequency": 0,
+        "malicious_frequency": 3,
+        "token_cost": 5,
+        "ngram_size": 4
+    },
+    "you are an ai": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 6.34,
+        "base_score": 1.585,
+        "length_multiplier": 4,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 4,
+        "ngram_size": 4
+    },
+    "are an ai trained": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 6.34,
+        "base_score": 1.585,
+        "length_multiplier": 4,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 4,
+        "ngram_size": 4
+    },
+    "system you are now": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 6.34,
+        "base_score": 1.585,
+        "length_multiplier": 4,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 4,
+        "ngram_size": 4
+    },
+    "behave as if you": {
         "type": "malicious_phrase",
         "source": "statistical",
         "malice_score": 6.34,
@@ -2221,6 +4069,72 @@
         "token_cost": 5,
         "ngram_size": 4
     },
+    "reveal your system prompt": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 6.34,
+        "base_score": 1.585,
+        "length_multiplier": 4,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 4,
+        "ngram_size": 4
+    },
+    "tell me what you": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 6.34,
+        "base_score": 1.585,
+        "length_multiplier": 4,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 4,
+        "ngram_size": 4
+    },
+    "note to the ai": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 6.34,
+        "base_score": 1.585,
+        "length_multiplier": 4,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 4,
+        "ngram_size": 4
+    },
+    "ignore all previous instructions and": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 7.925,
+        "base_score": 1.585,
+        "length_multiplier": 5,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 5,
+        "ngram_size": 5
+    },
+    "you are now in developer": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 7.925,
+        "base_score": 1.585,
+        "length_multiplier": 5,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 5,
+        "ngram_size": 5
+    },
+    "are now in developer mode": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 7.925,
+        "base_score": 1.585,
+        "length_multiplier": 5,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 5,
+        "ngram_size": 5
+    },
     "teach me how to spread": {
         "type": "malicious_phrase",
         "source": "statistical",
@@ -2230,6 +4144,17 @@
         "normal_frequency": 0,
         "malicious_frequency": 2,
         "token_cost": 6,
+        "ngram_size": 5
+    },
+    "you are an ai trained": {
+        "type": "malicious_phrase",
+        "source": "statistical",
+        "malice_score": 7.925,
+        "base_score": 1.585,
+        "length_multiplier": 5,
+        "normal_frequency": 0,
+        "malicious_frequency": 2,
+        "token_cost": 5,
         "ngram_size": 5
     }
 }
