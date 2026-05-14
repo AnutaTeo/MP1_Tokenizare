@@ -1,27 +1,35 @@
 import json
 import re
 import tiktoken
+
 encoding = tiktoken.get_encoding("cl100k_base")
+
 def load_knowledge_base(path):
     with open(path, "r", encoding="utf-8") as file:
         return json.load(file)
+    
 def load_prompt_from_file(path):
     with open(path, "r", encoding="utf-8") as file:
         return file.read()
+    
 def save_prompt_to_file(path, prompt):
     with open(path, "w", encoding="utf-8") as file:
         file.write(prompt)
+
 def count_tokens(text):
     return len(encoding.encode(text))
+
 def normalize_spaces(text):
     text = re.sub(r"\s+", " ", text)
     text = re.sub(r"\s+([?.!,;:])", r"\1", text)
     return text.strip()
+
 def normalize_phrase(text):
     text = text.lower()
     text = re.sub(r"\s+", " ", text)
     text = re.sub(r"[^\w\s]", "", text)
     return text.strip()
+
 def get_score(data):
     score1 = data.get("redundancy_score", 0)
     score2 = data.get("score", 0)
@@ -52,10 +60,13 @@ def replace_first_occurrence(text, old, new):
     pattern = r"\b" + re.escape(old) + r"\b"
     result = re.sub(pattern, new, text, count=1, flags=re.IGNORECASE)
     return normalize_spaces(result)
+
 def remove_first_occurrence(text, target):
     pattern = r"\b" + re.escape(target) + r"\b"
     result = re.sub(pattern, "", text, count=1, flags=re.IGNORECASE)
     return normalize_spaces(result)
+
+
 def get_single_word_score(word, knowledge_base):
     word = normalize_phrase(word)
     if word not in knowledge_base:
@@ -67,6 +78,8 @@ def get_single_word_score(word, knowledge_base):
     if ngram_size != 1:
         return 0
     return get_score(data)
+
+
 def phrase_redundancy_coverage(phrase, knowledge_base, ngram_size):
     # Checks how much of a phrase is made of individually redundant words.
     # Threshold scales with ngram size: long phrases need fewer redundant words
@@ -82,12 +95,16 @@ def phrase_redundancy_coverage(phrase, knowledge_base, ngram_size):
     # Required coverage ratio decreases as phrase length grows
     required_coverage = max(0.3, 0.7 - 0.08 * ngram_size)
     return redundant_count / len(words) >= required_coverage
+
+
 def contains_direct_repetition(phrase):
     words = normalize_phrase(phrase).split()
     for i in range(len(words) - 1):
         if words[i] == words[i + 1]:
             return True
     return False
+
+
 def detect_direct_repetitions(prompt):
     # Detects repeated words directly from prompt
     suggestions = []
@@ -111,6 +128,8 @@ def detect_direct_repetitions(prompt):
             "preview": preview
         })
     return suggestions
+
+
 def detect_knowledge_matches(prompt, knowledge_base):
     # Finds all words and phrases from knowledge base inside the prompt
     suggestions = []
@@ -152,6 +171,8 @@ def detect_knowledge_matches(prompt, knowledge_base):
         })
         seen.add(normalized)
     return suggestions
+
+
 def sort_suggestions(suggestions):
     ### Priority: 1 Direct repetitions first 2 Larger n-grams 3 Higher score
 
@@ -165,6 +186,8 @@ def sort_suggestions(suggestions):
             len(suggestion.get("target", ""))
         )
     return sorted(suggestions, key=priority, reverse=True)
+
+
 def generate_suggestions(prompt, knowledge_base, ignored_targets):
     suggestions = []
     suggestions.extend(detect_direct_repetitions(prompt))
@@ -175,6 +198,8 @@ def generate_suggestions(prompt, knowledge_base, ignored_targets):
         if suggestion["target"] not in ignored_targets
     ]
     return sort_suggestions(suggestions)
+
+
 def apply_suggestion(prompt, suggestion):
     if suggestion["type"] == "direct_repetition":
         return replace_first_occurrence(
@@ -188,6 +213,8 @@ def apply_suggestion(prompt, suggestion):
             suggestion["target"]
         )
     return prompt
+
+
 def print_suggestion(step, current_prompt, suggestion):
     print(f"\n STEP {step}")
     print("\nCURRENT PROMPT")
@@ -200,7 +227,7 @@ def print_suggestion(step, current_prompt, suggestion):
         print("Type: Knowledge base word/phrase")
         print(f"Remove: '{suggestion['original_phrase']}'")
         print(f"Score: {suggestion['score']}")
-        # Warn when score is below 1.5x the tier threshold — scaled per ngram size
+        # Warn when score is below 1.5x the tier threshold - scaled per ngram size
         ngram_size = suggestion.get("ngram_size", 1)
         low_score_cutoff = get_score_threshold(ngram_size) * 1.5
         if suggestion["score"] < low_score_cutoff:
@@ -210,13 +237,15 @@ def print_suggestion(step, current_prompt, suggestion):
     print(f"Reason: {suggestion['reason']}")
     print("\nPREVIEW")
     print(suggestion["preview"])
+
+
 def recursive_optimize(
     current_prompt,
     knowledge_base,
     accepted_changes,
     ignored_targets,
     step
-):
+    ):
     suggestions = generate_suggestions(
         current_prompt,
         knowledge_base,
@@ -268,6 +297,8 @@ def recursive_optimize(
         ignored_targets,
         step
     )
+
+
 def interactive_optimize_prompt(prompt, knowledge_base):
     return recursive_optimize(
         current_prompt=normalize_spaces(prompt),
@@ -276,6 +307,7 @@ def interactive_optimize_prompt(prompt, knowledge_base):
         ignored_targets=set(),
         step=1
     )
+
 def show_final_report(original_prompt, optimized_prompt, accepted_changes):
     original_tokens = count_tokens(original_prompt)
     optimized_tokens = count_tokens(optimized_prompt)
