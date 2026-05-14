@@ -6,11 +6,7 @@ import tiktoken
 
 encoding = tiktoken.get_encoding("cl100k_base")
 
-
-
 # DATA LOADING
-
-
 def load_dataset(path):
 
     with open(path, "r", encoding="utf-8") as file:
@@ -27,8 +23,6 @@ def load_dataset(path):
 
 
 # TEXT NORMALIZATION
-
-
 def normalize_text(text):
 
     text = text.lower()
@@ -40,8 +34,6 @@ def normalize_text(text):
 
 
 # WORD EXTRACTION
-
-
 def extract_words(text):
 
     return re.findall(r"\b\w+\b", text.lower())
@@ -49,8 +41,6 @@ def extract_words(text):
 
 
 # TOKENIZATION
-
-
 def tokenize_text(text):
 
     return encoding.encode(text)
@@ -63,8 +53,6 @@ def token_count(text):
 
 
 # NGRAM EXTRACTION
-
-
 def extract_ngrams(words, n=6):
 
     return [
@@ -96,8 +84,6 @@ def build_ngram_frequency_map(lines,n=5):
 
 
 # TOKEN EFFICIENCY STATS
-
-
 def compute_efficiency_stats(lines):
 
     total_tokens = 0
@@ -143,8 +129,6 @@ def compute_efficiency_stats(lines):
 
 
 # REDUNDANCY MINING
-
-
 def compute_redundancy_scores(
 
     normal_freq,
@@ -200,8 +184,6 @@ def compute_redundancy_scores(
 
 
 # KNOWLEDGE BASE
-
-
 def build_knowledge_base(
 
     normal_lines,
@@ -230,7 +212,6 @@ def build_knowledge_base(
             redundant_freq
         )
 
-        # FIX 2: keep the higher-scoring entry instead of silently overwriting
         for phrase, data in scores.items():
             if (
                 phrase not in knowledge
@@ -243,31 +224,14 @@ def build_knowledge_base(
 
 
 # SAVE KNOWLEDGE BASE
-
-
-def save_knowledge_base(
-
-    data,
-    path
-):
+def save_knowledge_base(data,path):
 
     with open(path, "w", encoding="utf-8") as file:
 
-        json.dump(
-
-            data,
-            file,
-
-            indent=4,
-
-            ensure_ascii=False
-        )
-
+        json.dump(data, file, indent=4, ensure_ascii=False)
 
 
 # MAIN
-
-
 def main():
 
     print("Loading datasets...")
