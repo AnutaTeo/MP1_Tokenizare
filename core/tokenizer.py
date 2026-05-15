@@ -74,7 +74,7 @@ def build_ngram_frequency_map(lines, n=5):
     counter = Counter()
     for line in lines:
         normalized = normalize_text(line)
-        words = extract_words(normalized, normalize=False)  # Already normalized
+        words = extract_words(normalized, normalize=False)
         ngrams = extract_ngrams(words, n)
         counter.update(ngrams)
     return counter
@@ -82,11 +82,10 @@ def build_ngram_frequency_map(lines, n=5):
 
 # BUILD ALL N-GRAM FREQUENCIES IN SINGLE PASS
 def build_all_ngram_frequency_maps(lines, sizes=[1, 2, 3, 4, 5]):
-    """Build frequency maps for all n-gram sizes in a single pass through data."""
     counters = {n: Counter() for n in sizes}
     for line in lines:
         normalized = normalize_text(line)
-        words = extract_words(normalized, normalize=False)  # Already normalized
+        words = extract_words(normalized, normalize=False)
         for n in sizes:
             ngrams = extract_ngrams(words, n)
             counters[n].update(ngrams)
@@ -101,7 +100,7 @@ def compute_efficiency_stats(lines):
     unique_tokens = set()
     for line in lines:
         tokens = tokenize_text(line)
-        words = extract_words(line, normalize=True)  # First extraction, needs normalization
+        words = extract_words(line, normalize=True)
         total_tokens += len(tokens)
         total_words += len(words)
         unique_tokens.update(tokens)
@@ -115,18 +114,10 @@ def compute_efficiency_stats(lines):
             total_words,
 
         "tokens_per_word":
-            round(
-                total_tokens / max(total_words, 1),
-                3
-            ),
+            round(total_tokens / max(total_words, 1), 3),
 
         "unique_token_ratio":
-            round(
-                len(unique_tokens)
-                /
-                max(total_tokens, 1),
-                3
-            )
+            round(len(unique_tokens) / max(total_tokens, 1), 3)
     }
 
 
@@ -138,7 +129,7 @@ def compute_redundancy_scores(normal_freq, redundant_freq, min_redundant_frequen
         if redundant_count < min_redundant_frequency:
             continue
         normal_count = normal_freq.get(phrase, 0)
-        # smoothed statistical score — weight strategy varies by ngram length
+        # statistical score -> weight strategy varies by ngram length
         n = len(phrase.split())
         freq_ratio = math.log(redundant_count + 1) / math.log(normal_count + 2)
         if n <= 2:
@@ -170,7 +161,7 @@ def build_knowledge_base(normal_lines, redundant_lines):
     knowledge = {}
     ngram_sizes = [1, 2, 3, 4, 5]
     
-    print("Building n-gram frequencies for all sizes (single pass per dataset)...")
+    print("Building n-gram frequencies for all sizes...")
     # Build all n-gram frequencies in single pass through each dataset
     normal_freqs = build_all_ngram_frequency_maps(normal_lines, ngram_sizes)
     redundant_freqs = build_all_ngram_frequency_maps(redundant_lines, ngram_sizes)

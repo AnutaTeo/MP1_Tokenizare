@@ -8,7 +8,7 @@ import tiktoken
 
 encoding = tiktoken.get_encoding("cl100k_base")
 
-#  Tokenizer utilities─
+#  Tokenizer utilities
 
 def tokenize_text(text: str) -> list:
     return encoding.encode(text)
@@ -31,7 +31,7 @@ def build_ngram_frequency_map(lines: list, n: int) -> Counter:
         counter.update(extract_ngrams(extract_words(normalize_text(line)), n))
     return counter
 
-#  Unicode constants─
+#  Unicode constants
 
 ALLOWED_UNICODE_RANGES = [
     (0x0009, 0x000D),
@@ -177,7 +177,7 @@ THREAT_PATTERNS = [
     for e in _RAW_THREAT_PATTERNS
 ]
 
-#  Knowledge base training 
+# knowledge base training 
 
 def compute_malice_scores(
     normal_freq: Counter,
@@ -250,13 +250,13 @@ def sanitize_unicode(text: str) -> dict:
     homoglyphs_found = []
     invisible_found  = []
 
-    # Pass 1: strip invisible / direction-override chars
+    # strip invisible / direction-override chars
     step1 = [ch for ch in text if ch not in INVISIBLE_CHARS or (invisible_found.append(ch) and False)]
     # cleaner rewrite of above with side-effects separated
     invisible_found = [ch for ch in text if ch in INVISIBLE_CHARS]
     step1 = [ch for ch in text if ch not in INVISIBLE_CHARS]
 
-    # Pass 2: normalize homoglyphs
+    # normalize homoglyphs
     homoglyphs_found = []
     step2 = []
     for ch in step1:
@@ -267,7 +267,7 @@ def sanitize_unicode(text: str) -> dict:
         else:
             step2.append(ch)
 
-    # Pass 3: whitelist filter
+    # whitelist filter
     removed_chars = []
     step3 = []
     for ch in step2:
@@ -287,7 +287,7 @@ def sanitize_unicode(text: str) -> dict:
         "removed_chars":    removed_chars,
     }
 
-#  Scoring components
+# scoring components
 
 def compute_unicode_score(ur: dict) -> float:
     raw = (

@@ -1,409 +1,413 @@
-# TODO: implement GUI logic using Tkinter
+# Enhanced GUI with 2 modes: Threat Detection and Prompt Optimization
 
 import json
 import re
 import tkinter as tk
 from pathlib import Path
-from tkinter import messagebox
+from tkinter import messagebox, ttk
+import sys
 
 import tiktoken
 
+# Add core to path for imports
+sys.path.insert(0, str(Path(__file__).parent))
+
+from core.detect import detect
+from core.optimizer import (
+    load_knowledge_base,
+    generate_suggestions,
+    apply_suggestion,
+    normalize_spaces,
+    count_tokens,
+)
 
 BASE_DIR = Path(__file__).resolve().parent
 KNOWLEDGE_FILE = BASE_DIR / "knowledge" / "redundant_patterns.json"
+THREAT_KB_FILE = BASE_DIR / "knowledge" / "threat_patterns.json"
 
 encoding = tiktoken.get_encoding("cl100k_base")
-
-
-def load_knowledge_base(path):
-    #Loads redundant patterns from JSON file
-    try:
-        with open(path, "r", encoding="utf-8") as file:
-            return json.load(file)
-    except FileNotFoundError:
-        messagebox.showerror(
-            "Error",
-            f"Knowledge base file not found:\n{path}"
-        )
-        return {}
 
 
 def clean_word(word):
     return re.sub(r"[^\w]", "", word).lower()
 
 
-def count_tokens(text):
-    return len(encoding.encode(text))
+def load_kb(path):
+    try:
+        with open(path, "r", encoding="utf-8") as file:
+            return json.load(file)
+    except FileNotFoundError:
+        return {}
 
 
-def get_tokens(text):
-    #Returns token ids and decoded token text
-    token_ids = encoding.encode(text)
-
-    decoded_tokens = []
-    for token_id in token_ids:
-        decoded_tokens.append(encoding.decode([token_id]))
-
-    return token_ids, decoded_tokens
-
-
-def get_redundant_words(knowledge_base, min_score=4.0):
-    # Extracts redundant single words from both old and new JSON formats
-    redundant_words = {}
-
-    for pattern, data in knowledge_base.items():
-        pattern_clean = clean_word(pattern)
-
-        if not pattern_clean:
-            continue
-
-        # Only highlight single words in the old GUI logic
-        if len(pattern_clean.split()) != 1:
-            continue
-
-        pattern_type = data.get("type")
-
-        if pattern_type not in ["redundant_word", "redundant_phrase"]:
-            continue
-
-        ngram_size = data.get("ngram_size", len(pattern_clean.split()))
-
-        if ngram_size != 1:
-            continue
-
-        score = data.get("redundancy_score", data.get("score", 0))
-
-        try:
-            score = float(score)
-        except (TypeError, ValueError):
-            score = 0
-
-        if score >= min_score:
-            redundant_words[pattern_clean] = score
-
-    return redundant_words
-
-
-def get_repeated_phrases(knowledge_base):
-    # Extracts repeated phrases if they exist in the JSON
-    repeated_phrases = {}
-
-    for pattern, data in knowledge_base.items():
-        if data.get("type") == "repeated_phrase":
-            repeated_phrases[pattern] = data.get("frequency", 0)
-
-    return repeated_phrases
-
-
-class MP1App:
+class EnhancedMP1App:
     def __init__(self, root):
         self.root = root
-        self.root.title("Tokenization Visualizer")
-        self.root.geometry("1000x700")
+        self.root.title("Prompt Analyzer - Threat Detection & Optimization")
+        self.root.geometry("1200x800")
 
-        self.knowledge_base = load_knowledge_base(KNOWLEDGE_FILE)
-
-        self.redundant_words = get_redundant_words(
-            self.knowledge_base,
-            min_score=4.0
-        )
-
-        self.repeated_phrases = get_repeated_phrases(self.knowledge_base)
+        self.knowledge_base = load_kb(KNOWLEDGE_FILE)
+        self.threat_kb = load_kb(THREAT_KB_FILE)
+        
+        self.current_optimization_step = 0
+        self.current_suggestions = []
+        self.ignored_targets = set()
+        self.accepted_changes = []
+        self.current_optimized_prompt = ""
 
         self.create_widgets()
 
     def create_widgets(self):
+        # Title
         title_label = tk.Label(
             self.root,
-            text="Tokenization and Redundancy Analyzer",
+            text="Prompt Analyzer - Threat Detection & Optimization",
             font=("Arial", 16, "bold")
         )
         title_label.pack(pady=10)
 
-        description_label = tk.Label(
-            self.root,
-            text="Write a prompt, analyze tokenization and see redundant words highlighted in red.",
-            font=("Arial", 10)
-        )
-        description_label.pack(pady=5)
+        # Notebook (tabs)
+        self.notebook = ttk.Notebook(self.root)
+        self.notebook.pack(fill="both", expand=True, padx=10, pady=10)
 
-        input_frame = tk.Frame(self.root)
-        input_frame.pack(fill="both", expand=False, padx=15, pady=10)
+        # Tab 1: Input
+        self.input_frame = ttk.Frame(self.notebook)
+        self.notebook.add(self.input_frame, text="Input Prompt")
+        self.create_input_tab()
 
+        # Tab 2: Threat Detection
+        self.threat_frame = ttk.Frame(self.notebook)
+        self.notebook.add(self.threat_frame, text="Detect Threats")
+        self.create_threat_tab()
+
+        # Tab 3: Optimization
+        self.optimize_frame = ttk.Frame(self.notebook)
+        self.notebook.add(self.optimize_frame, text="Optimize Prompt")
+        self.create_optimize_tab()
+
+    def create_input_tab(self):
         input_label = tk.Label(
-            input_frame,
-            text="Input Prompt:",
+            self.input_frame,
+            text="Enter your prompt here:",
             font=("Arial", 11, "bold")
         )
-        input_label.pack(anchor="w")
+        input_label.pack(anchor="w", padx=15, pady=10)
 
         self.prompt_text = tk.Text(
-            input_frame,
-            height=8,
+            self.input_frame,
+            height=20,
             wrap="word",
             font=("Arial", 11)
         )
-        self.prompt_text.pack(fill="both", expand=True)
+        self.prompt_text.pack(fill="both", expand=True, padx=15, pady=5)
 
-        self.prompt_text.tag_configure(
-            "redundant",
-            foreground="red",
-            font=("Arial", 11, "bold")
-        )
+        # Sample text
+        sample = "Could you please please summarize this article in a very very short and concise way for me please?"
+        self.prompt_text.insert("1.0", sample)
 
-        self.prompt_text.tag_configure(
-            "repeated",
-            foreground="white",
-            background="red",
-            font=("Arial", 11, "bold")
-        )
+        button_frame = tk.Frame(self.input_frame)
+        button_frame.pack(pady=10)
 
-        sample_prompt = (
-            "Could you please please summarize this article in a very very short and concise way for me please?"
-        )
-
-        self.prompt_text.insert("1.0", sample_prompt)
-
-        button_frame = tk.Frame(self.root)
-        button_frame.pack(pady=5)
-
-        analyze_button = tk.Button(
-            button_frame,
-            text="Analyze Prompt",
-            command=self.analyze_prompt,
-            width=20,
-            bg="#d9ead3"
-        )
-        analyze_button.grid(row=0, column=0, padx=5)
-
-        clear_button = tk.Button(
+        clear_btn = tk.Button(
             button_frame,
             text="Clear",
-            command=self.clear_all,
+            command=self.clear_input,
             width=20,
             bg="#f4cccc"
         )
-        clear_button.grid(row=0, column=1, padx=5)
+        clear_btn.pack(side="left", padx=5)
 
-        results_frame = tk.Frame(self.root)
-        results_frame.pack(fill="both", expand=True, padx=15, pady=10)
-
-        left_frame = tk.Frame(results_frame)
-        left_frame.pack(side="left", fill="both", expand=True, padx=5)
-
-        right_frame = tk.Frame(results_frame)
-        right_frame.pack(side="right", fill="both", expand=True, padx=5)
-
-        stats_label = tk.Label(
-            left_frame,
-            text="Token Statistics:",
+    def create_threat_tab(self):
+        display_label = tk.Label(
+            self.threat_frame,
+            text="Threat Analysis Report:",
             font=("Arial", 11, "bold")
         )
-        stats_label.pack(anchor="w")
+        display_label.pack(anchor="w", padx=15, pady=10)
 
-        self.stats_text = tk.Text(
-            left_frame,
-            height=10,
+        self.threat_display = tk.Text(
+            self.threat_frame,
+            height=15,
             wrap="word",
             font=("Consolas", 10)
         )
-        self.stats_text.pack(fill="both", expand=True)
+        self.threat_display.pack(fill="both", expand=True, padx=15, pady=5)
 
-        tokens_label = tk.Label(
-            right_frame,
-            text="Tokenization Output:",
+        # Tags for threats
+        self.threat_display.tag_configure("critical", foreground="red", font=("Consolas", 10, "bold"))
+        self.threat_display.tag_configure("high", foreground="orange", font=("Consolas", 10, "bold"))
+        self.threat_display.tag_configure("medium", foreground="gold", font=("Consolas", 10))
+        self.threat_display.tag_configure("low", foreground="blue", font=("Consolas", 10))
+        self.threat_display.tag_configure("label", font=("Consolas", 10, "bold"))
+
+        button_frame = tk.Frame(self.threat_frame)
+        button_frame.pack(pady=10)
+
+        analyze_btn = tk.Button(
+            button_frame,
+            text="Analyze for Threats",
+            command=self.analyze_threats,
+            width=30,
+            bg="#d9ead3",
+            font=("Arial", 10, "bold")
+        )
+        analyze_btn.pack(side="left", padx=5)
+
+    def create_optimize_tab(self):
+        display_label = tk.Label(
+            self.optimize_frame,
+            text="Optimization Suggestions & Results:",
             font=("Arial", 11, "bold")
         )
-        tokens_label.pack(anchor="w")
+        display_label.pack(anchor="w", padx=15, pady=10)
 
-        self.tokens_text = tk.Text(
-            right_frame,
-            height=10,
+        # Suggestion display
+        self.optimize_display = tk.Text(
+            self.optimize_frame,
+            height=12,
             wrap="word",
             font=("Consolas", 10)
         )
-        self.tokens_text.pack(fill="both", expand=True)
+        self.optimize_display.pack(fill="both", expand=True, padx=15, pady=5)
 
-        threats_label = tk.Label(
-            self.root,
-            text="Redundancy Report:",
-            font=("Arial", 11, "bold")
+        # Tags for optimization
+        self.optimize_display.tag_configure("redundant", foreground="red", font=("Consolas", 10, "bold"))
+        self.optimize_display.tag_configure("accepted", foreground="green", font=("Consolas", 10, "bold"))
+        self.optimize_display.tag_configure("info", font=("Consolas", 10))
+
+        button_frame = tk.Frame(self.optimize_frame)
+        button_frame.pack(pady=10)
+
+        optimize_btn = tk.Button(
+            button_frame,
+            text="Start Optimization",
+            command=self.start_optimization,
+            width=20,
+            bg="#d9ead3",
+            font=("Arial", 10, "bold")
         )
-        threats_label.pack(anchor="w", padx=15)
+        optimize_btn.pack(side="left", padx=5)
 
-        self.report_text = tk.Text(
-            self.root,
-            height=7,
-            wrap="word",
-            font=("Consolas", 10)
+        accept_btn = tk.Button(
+            button_frame,
+            text="Accept (y)",
+            command=lambda: self.handle_optimization_response("y"),
+            width=15,
+            bg="#c6e9a8",
+            font=("Arial", 10)
         )
-        self.report_text.pack(fill="both", expand=True, padx=15, pady=5)
+        accept_btn.pack(side="left", padx=5)
 
-    def analyze_prompt(self):
-        prompt = self.prompt_text.get("1.0", "end-1c")
+        reject_btn = tk.Button(
+            button_frame,
+            text="Reject (n)",
+            command=lambda: self.handle_optimization_response("n"),
+            width=15,
+            bg="#f8cbad",
+            font=("Arial", 10)
+        )
+        reject_btn.pack(side="left", padx=5)
 
-        if not prompt.strip():
+        stop_btn = tk.Button(
+            button_frame,
+            text="Stop",
+            command=self.stop_optimization,
+            width=15,
+            bg="#f4cccc",
+            font=("Arial", 10)
+        )
+        stop_btn.pack(side="left", padx=5)
+
+    def get_input_text(self):
+        return self.prompt_text.get("1.0", "end-1c").strip()
+
+    def clear_input(self):
+        self.prompt_text.delete("1.0", tk.END)
+
+    def analyze_threats(self):
+        prompt = self.get_input_text()
+        if not prompt:
             messagebox.showwarning("Warning", "Please enter a prompt first.")
             return
 
-        self.clear_previous_results()
+        self.threat_display.delete("1.0", tk.END)
 
-        token_ids, decoded_tokens = get_tokens(prompt)
+        try:
+            # Run threat detection
+            result = detect(prompt, kb_path=str(self.threat_kb), verbose=False)
 
-        word_count = len(re.findall(r"\b\w+\b", prompt))
-        token_count_value = len(token_ids)
+            # Display results
+            danger_score = result.get("danger_score", 0)
+            verdict = result.get("verdict", "UNKNOWN")
+            threats = result.get("threats", [])
 
-        tokens_per_word = token_count_value / max(word_count, 1)
+            # Header
+            header = f"{danger_score:.0f}% danger - Verdict: {verdict}\n"
+            header += "=" * 60 + "\n\n"
+            self.threat_display.insert(tk.END, header, "label")
 
-        redundant_found = self.highlight_redundant_words(prompt)
-        repeated_found = self.highlight_repeated_phrases(prompt)
+            # Threat type summary
+            if threats:
+                threat_types = set()
+                for t in threats:
+                    threat_types.add(t["type"])
 
-        self.show_statistics(
-            token_count_value,
-            word_count,
-            tokens_per_word,
-            redundant_found,
-            repeated_found
-        )
+                summary = ""
+                for threat_type in sorted(threat_types):
+                    if threat_type == "pattern":
+                        summary += "• Dangerous pattern detected\n"
+                    elif threat_type == "statistical":
+                        summary += "• Dangerous learned phrase detected\n"
+                    elif threat_type == "unicode":
+                        summary += "• Dangerous unicode detected\n"
 
-        self.show_tokens(token_ids, decoded_tokens)
+                self.threat_display.insert(tk.END, summary + "\n", "info")
 
-        self.show_report(redundant_found, repeated_found)
+                # Detailed threats
+                self.threat_display.insert(tk.END, f"Detected Threats ({len(threats)}):\n", "label")
+                self.threat_display.insert(tk.END, "-" * 60 + "\n", "info")
 
-    def clear_previous_results(self):
-        self.stats_text.delete("1.0", tk.END)
-        self.tokens_text.delete("1.0", tk.END)
-        self.report_text.delete("1.0", tk.END)
+                for t in threats:
+                    severity = t.get("severity", "low").lower()
+                    label = t["label"]
+                    evidence = t["evidence"]
 
-        self.prompt_text.tag_remove("redundant", "1.0", tk.END)
-        self.prompt_text.tag_remove("repeated", "1.0", tk.END)
+                    threat_line = f"[{severity.upper():8}] {label}\n"
+                    self.threat_display.insert(tk.END, threat_line, severity)
+                    
+                    evidence_line = f"             Evidence: \"{evidence}\"\n"
+                    self.threat_display.insert(tk.END, evidence_line, "info")
+            else:
+                self.threat_display.insert(tk.END, "No threats detected.\n", "info")
 
-    def highlight_redundant_words(self, prompt):
-        #Highlights redundant words in red
-        
-        redundant_found = []
+        except Exception as e:
+            messagebox.showerror("Error", f"Error during threat analysis:\n{str(e)}")
 
-        words = re.finditer(r"\b\w+\b", prompt)
-
-        for match in words:
-            word = match.group()
-            cleaned = clean_word(word)
-
-            if cleaned in self.redundant_words:
-                start_index = f"1.0 + {match.start()} chars"
-                end_index = f"1.0 + {match.end()} chars"
-
-                self.prompt_text.tag_add(
-                    "redundant",
-                    start_index,
-                    end_index
-                )
-
-                redundant_found.append({
-                    "word": word,
-                    "score": self.redundant_words[cleaned]
-                })
-
-        return redundant_found
-
-    def highlight_repeated_phrases(self, prompt):
-        #Highlights repeated phrases with red
-
-        repeated_found = []
-
-        for phrase, frequency in self.repeated_phrases.items():
-            pattern = r"\b" + re.escape(phrase) + r"\b"
-
-            for match in re.finditer(pattern, prompt, flags=re.IGNORECASE):
-                start_index = f"1.0 + {match.start()} chars"
-                end_index = f"1.0 + {match.end()} chars"
-
-                self.prompt_text.tag_add(
-                    "repeated",
-                    start_index,
-                    end_index
-                )
-
-                repeated_found.append({
-                    "phrase": match.group(),
-                    "frequency": frequency
-                })
-
-        return repeated_found
-
-    def show_statistics(
-        self,
-        token_count_value,
-        word_count,
-        tokens_per_word,
-        redundant_found,
-        repeated_found
-    ):
-        stats = ""
-        stats += f"Token count:       {token_count_value}\n"
-        stats += f"Word count:        {word_count}\n"
-        stats += f"Tokens per word:   {tokens_per_word:.2f}\n"
-        stats += f"Redundant words:   {len(redundant_found)}\n"
-        stats += f"Repeated phrases:  {len(repeated_found)}\n"
-
-        if token_count_value <= 20:
-            efficiency = "Good"
-        elif token_count_value <= 50:
-            efficiency = "Medium"
-        else:
-            efficiency = "High token usage"
-
-        stats += f"Efficiency level:  {efficiency}\n"
-
-        self.stats_text.insert(tk.END, stats)
-
-    def show_tokens(self, token_ids, decoded_tokens):
-        #Displays token id and decoded token text
-        
-        for index, (token_id, token_text) in enumerate(
-            zip(token_ids, decoded_tokens),
-            start=1
-        ):
-            safe_token_text = token_text.replace("\n", "\\n")
-            self.tokens_text.insert(
-                tk.END,
-                f"{index}. ID={token_id} | text='{safe_token_text}'\n"
-            )
-
-    def show_report(self, redundant_found, repeated_found):
-        if not redundant_found and not repeated_found:
-            self.report_text.insert(
-                tk.END,
-                "No redundant words or repeated phrases detected.\n"
-            )
+    def start_optimization(self):
+        prompt = self.get_input_text()
+        if not prompt:
+            messagebox.showwarning("Warning", "Please enter a prompt first.")
             return
 
-        if repeated_found:
-            self.report_text.insert(tk.END, "Repeated phrases detected:\n")
+        self.optimize_display.delete("1.0", tk.END)
+        self.current_optimized_prompt = normalize_spaces(prompt)
+        self.current_suggestions = []
+        self.ignored_targets = set()
+        self.accepted_changes = []
+        self.current_optimization_step = 0
 
-            for item in repeated_found:
-                self.report_text.insert(
-                    tk.END,
-                    f"- '{item['phrase']}' | frequency in dataset: {item['frequency']}\n"
-                )
+        self.show_next_optimization_step()
 
-            self.report_text.insert(tk.END, "\n")
+    def show_next_optimization_step(self):
+        self.optimize_display.delete("1.0", tk.END)
 
-        if redundant_found:
-            self.report_text.insert(tk.END, "Redundant words detected:\n")
+        # Generate suggestions
+        self.current_suggestions = generate_suggestions(
+            self.current_optimized_prompt,
+            self.knowledge_base,
+            self.ignored_targets
+        )
 
-            for item in redundant_found:
-                self.report_text.insert(
-                    tk.END,
-                    f"- '{item['word']}' | redundancy score: {item['score']}\n"
-                )
+        if not self.current_suggestions:
+            # Show final report
+            self.show_optimization_report()
+            return
+
+        suggestion = self.current_suggestions[0]
+        self.current_optimization_step += 1
+
+        # Display suggestion
+        header = f"STEP {self.current_optimization_step}\n"
+        header += "=" * 60 + "\n\n"
+        self.optimize_display.insert(tk.END, header, "label")
+
+        info = f"Current prompt:\n{self.current_optimized_prompt}\n\n"
+        self.optimize_display.insert(tk.END, info, "info")
+
+        if suggestion["type"] == "direct_repetition":
+            sugg_text = f"Type: Direct repetition\n"
+            sugg_text += f"Replace: '{suggestion['target']}' -> '{suggestion['replacement']}'\n"
+        else:
+            sugg_text = f"Type: Knowledge base word/phrase\n"
+            sugg_text += f"Remove: '{suggestion['target']}'\n"
+            sugg_text += f"Score: {suggestion['score']}\n"
+
+        sugg_text += f"N-gram size: {suggestion['ngram_size']}\n"
+        sugg_text += f"Estimated saved tokens: {suggestion['saved_tokens']}\n"
+        sugg_text += f"Reason: {suggestion['reason']}\n\n"
+
+        self.optimize_display.insert(tk.END, sugg_text, "redundant")
+
+        preview_text = f"Preview after change:\n{suggestion['preview']}\n"
+        self.optimize_display.insert(tk.END, preview_text, "info")
+
+    def handle_optimization_response(self, response):
+        if not self.current_suggestions:
+            messagebox.showinfo("Info", "No active optimization session.")
+            return
+
+        suggestion = self.current_suggestions[0]
+
+        if response == "y":
+            self.current_optimized_prompt = apply_suggestion(
+                self.current_optimized_prompt,
+                suggestion
+            )
+            self.current_optimized_prompt = normalize_spaces(self.current_optimized_prompt)
+            self.accepted_changes.append(suggestion)
+        elif response == "n":
+            self.ignored_targets.add(suggestion["target"])
+
+        self.show_next_optimization_step()
+
+    def stop_optimization(self):
+        self.show_optimization_report()
+
+    def show_optimization_report(self):
+        self.optimize_display.delete("1.0", tk.END)
+
+        original_prompt = self.get_input_text()
+        original_tokens = count_tokens(original_prompt)
+        optimized_tokens = count_tokens(self.current_optimized_prompt)
+        saved_tokens = original_tokens - optimized_tokens
+
+        header = "OPTIMIZATION COMPLETE\n"
+        header += "=" * 60 + "\n\n"
+        self.optimize_display.insert(tk.END, header, "label")
+
+        result_text = f"Optimized prompt:\n{self.current_optimized_prompt}\n\n"
+        self.optimize_display.insert(tk.END, result_text, "info")
+
+        stats = f"TOKEN STATISTICS\n"
+        stats += f"Original tokens:  {original_tokens}\n"
+        stats += f"Optimized tokens: {optimized_tokens}\n"
+        stats += f"Saved tokens:     {saved_tokens}\n"
+
+        if original_tokens > 0:
+            reduction = (saved_tokens / original_tokens) * 100
+            stats += f"Reduction:        {reduction:.2f}%\n"
+
+        self.optimize_display.insert(tk.END, stats, "label")
+
+        if self.accepted_changes:
+            changes_text = f"\nACCEPTED CHANGES ({len(self.accepted_changes)}):\n"
+            self.optimize_display.insert(tk.END, changes_text, "accepted")
+
+            for change in self.accepted_changes:
+                if change["type"] == "direct_repetition":
+                    change_line = f"- Replace '{change['target']}' -> '{change['replacement']}'\n"
+                else:
+                    change_line = f"- Remove '{change['target']}' (saved {change['saved_tokens']} tokens)\n"
+                self.optimize_display.insert(tk.END, change_line, "accepted")
+        else:
+            no_changes = "\nNo changes were accepted.\n"
+            self.optimize_display.insert(tk.END, no_changes, "info")
 
     def clear_all(self):
         self.prompt_text.delete("1.0", tk.END)
-        self.clear_previous_results()
 
 
 if __name__ == "__main__":
     root = tk.Tk()
-    app = MP1App(root)
+    app = EnhancedMP1App(root)
     root.mainloop()
